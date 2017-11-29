@@ -16,6 +16,7 @@ $(function(argument) {
 	function hideall() {
 		$("#intro").hide();
 		$("#quiz").hide();
+		$("#result").hide();
 	}
 
 	function showWidget(widget) {
@@ -78,9 +79,9 @@ $(function(argument) {
 	});
 
 	$("#reset").on("click", function(){
-		var currentIndex = 0;
-		var questions = [];
-		var score = 0;
+		currentIndex = 0;
+		questions = [];
+		score = 0;
 		$("#start").click();
 	});
 
