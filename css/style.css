@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
 
-body {font-family: 'Roboto', sans-serif; text-align: center;max-width: 600px;margin: auto; font-weight: 400}
+body {font-family: 'Roboto', sans-serif; text-align: center;max-width: 600px;margin: auto; font-weight: 400; padding: 20px}
 h1 {font-weight: 400;}
 .btn {
   display: inline-block;
