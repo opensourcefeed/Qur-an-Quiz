@@ -22,22 +22,20 @@ h1 {font-weight: 400;}
   margin-top: auto;
 }
 .option {
-  background: rgb(0, 122, 255);
+  border: 1px solid rgb(0, 122, 255);
   padding: 10px;
-  margin: 3px;
+  margin: 20px 10px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.1rem;
-  color: white;
-  transform: background 1s ease;
 }
 .option.correct {
   background: rgb(76, 217, 100);
-    transform: background 1s ease;
+  border-color: rgb(76, 217, 100);
 }
 .option.incorrect {
   background: rgb(255, 59, 48);
-    transform: background 1s ease;
+  border-color: rgb(255, 59, 48);
 }
 #result {
   font-family: 'Roboto', sans-serif;

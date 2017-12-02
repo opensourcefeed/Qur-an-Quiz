@@ -5,12 +5,12 @@ var score = 0;
 
 $(function(argument) {
 	String.prototype.format = function() {
-    var formatted = this;
-    for (var i = 0; i < arguments.length; i++) {
-        var regexp = new RegExp('\\{'+i+'\\}', 'gi');
-        formatted = formatted.replace(regexp, arguments[i]);
-    }
-    return formatted;
+		var formatted = this;
+		for (var i = 0; i < arguments.length; i++) {
+			var regexp = new RegExp('\\{'+i+'\\}', 'gi');
+			formatted = formatted.replace(regexp, arguments[i]);
+		}
+		return formatted;
 	};
 
 	function hideall() {
@@ -37,14 +37,14 @@ $(function(argument) {
 
 	function showQuestion() {
 		var question = questions[currentIndex];
-		$("#quiz").html("");
 		$("#quiz").hide();
+		$("#quiz").html("");
 		$("#quiz").append("<p class='progress'>Question {0} of {1}</p>".format(currentIndex + 1, questionCount));
 		$("#quiz").append("<p class='question'>{0}</p>".format(question.question));
 		$.each(question.options, function(index, option) {
 			$("#quiz").append("<div class='option'>{0}</div>".format(option));
 		});
-		$("#quiz").fadeIn();
+		$("#quiz").show();
 	}
 
 	$("#quiz").on("click", ".option", function() {
