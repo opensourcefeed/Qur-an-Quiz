@@ -3,13 +3,14 @@
 body {font-family: 'Roboto', sans-serif; text-align: center;max-width: 600px;margin: auto; font-weight: 400; padding: 20px}
 h1 {font-weight: 400;}
 .btn {
-  display: inline-block;
+  display: block;
   cursor: pointer;
   background: rgb(0, 122, 255);
   color: white;
   padding: 10px;
   border-radius: 10px;
   margin: auto;
+  margin: 10px;
 }
 .progress {
   color: rgb(0, 122, 255);

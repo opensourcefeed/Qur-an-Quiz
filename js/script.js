@@ -1,4 +1,4 @@
-var questionCount = 10;
+var questionCount = 2;
 var currentIndex = 0;
 var questions = [];
 var score = 0;
@@ -17,6 +17,7 @@ $(function(argument) {
 		$("#intro").hide();
 		$("#quiz").hide();
 		$("#result").hide();
+		$("#topics-section").hide();
 	}
 
 	function showWidget(widget) {
@@ -46,6 +47,20 @@ $(function(argument) {
 		});
 		$("#quiz").show();
 	}
+
+	$("#topics-section").on("click", ".topic", function() {
+		var id = $(this).data("id");
+		$.getJSON("data/"+id+".json", function(data) {
+			data = shuffle(data.questions);
+			$.each(data, function(index, question) {
+				questions.push(question);
+			});
+			questions = questions.splice(0, questionCount);
+			showQuestion();
+			showWidget('#quiz');
+		});
+		
+	});
 
 	$("#quiz").on("click", ".option", function() {
 		var question = questions[currentIndex];
@@ -82,24 +97,28 @@ $(function(argument) {
 		currentIndex = 0;
 		questions = [];
 		score = 0;
-		$("#start").click();
+		$("#choose-topic").click();
 	});
 
 	// Show intro
 	showWidget('#intro');
 
-	$("#start").on("click", function() {
-		$.getJSON("data/data.json", function(data) {
-			data = shuffle(data);
-			$.each(data, function(index, question) {
-				questions.push(question);
+	$("#choose-topic").on("click", function() {
+		$.getJSON("data/topics.json", function(data) {
+			var topics = "";
+			$.each (data, function(index, topic) {
+				topics += "<div class='btn topic' data-id='{1}'>{0}</div>".format(topic.title, topic.id);
 			});
-			questions = questions.splice(0, questionCount);
-			showQuestion();
-			showWidget('#quiz');
+			$("#topic-list").html(topics);
+
+			showWidget('#topics-section');
+		}, function(e) {
+			console.log(e);
 		});
 		
 	});
+
+
 
 	
 });
