@@ -1,4 +1,4 @@
-var questionCount = 10;
+var questionCount = 2;
 var currentIndex = 0;
 var questions = [];
 var score = 0;
