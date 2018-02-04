@@ -1,0 +1,115 @@
+{
+  "title": "Gynaecology",
+  "questions": [
+    {
+      "question": "You have been asked to obtain consent from a 32-year-old woman with cyclical pelvic pain for a diagnostic laparoscopy under general anaesthesia. What would you advise her regarding the overall risk of a serious complication?",
+      "options": [
+        "1 in 50",
+        "1 in 100",
+        "1 in 250",
+        "1 in 500",
+        "1 in 1000"
+      ],
+      "answer": "1 in 500"
+    },
+    {
+      "question": "A 28-year-old woman undergoes extensive laparoscopic surgery in the lithotomy position. She presents after two days with unresolved right-sided foot drop and paraesthesia over the calf and dorsum of the right foot. Damage to which nerve is the most likely cause?",
+      "options": [
+        "Common peroneal",
+        "Femoral",
+        "Ilio-inguinal",
+        "Lateral cutaneous of the thigh",
+        "Obturator"
+      ],
+      "answer": "Common peroneal"
+    },
+    {
+      "question": "A 19-year-old woman was seen in the gynaecology clinic with a history of excessive growth of facial hair, needing to wax every 2-3 weeks. Her menstrual periods last 7-8 days every 24-35 days. There is no change in her voice. Her BMI is 28 kg/m2. Examination shows Ferriman-Gallwey grade 2-3 hirsutism over chest and abdomen. A pelvic ultrasound showed no abnormality. Her day two hormone tests showed LH level 7.4IU/L, FSH level 5.2IU/L, serum testosterone level 2.3nmol/l, SH24 nmol/L. What is the most likely diagnosis?",
+      "options": [
+        "Adrenocorticotropic hormone (ACTH) tumour",
+        "Androgen producing ovarian tumour",
+        "Cushing syndrome",
+        "Idiopathic hirsuitism",
+        "Polycystic ovary syndrome"
+      ],
+      "answer": "Idiopathic hirsuitism"
+    },
+    {
+      "question": "A 34-year-old woman complains of heavy periods. She is trying to get pregnant so you prescribe mefenamic acid for her, knowing it is very effective in reducing the blood flow. What type of drug is this?",
+      "options": [
+        "Cyclo-oxygenase inhibitor",
+        "Derivative of 17α-ethinyltestosterone",
+        "Gonadotropin releasing hormone agonist",
+        "Plasminogen activator inhibitor",
+        "Synthetic steroid hormone"
+      ],
+      "answer": "Cyclo-oxygenase inhibitor"
+    },
+    {
+      "question": "A 45-year-old woman with history of vulval itching and soreness for past two years attends the gynaecology clinic. She is a smoker. She gives a history of using high potency steroid ointment previously with no symptom relief. A biopsy in the clinic reports vulval intraepithelial neoplasia (VIN) 3. You counsel her for excision of the lesion. What percentage of VIN ultimately have unrecognised invasion detected on excision?",
+      "options": [
+        "5%",
+        "10%",
+        "15%",
+        "20%",
+        "25%"
+      ],
+      "answer": "20%"
+    },
+    {
+      "question": "A 55-year-old woman is due to come in for total abdominal hysterectomy and bilateral salpingo-oophorectomy for a large mucinous ovarian cyst. She takes sequential HRT for menopausal symptoms. You discuss with her the risk of venous thromboembolism. How long prior to surgery should she stop HRT?",
+      "options": [
+        "2 weeks",
+        "3 weeks",
+        "4 weeks",
+        "5 weeks",
+        "6 weeks"
+      ],
+      "answer": "4 weeks"
+    },
+    {
+      "question": "A 22 year-old-woman presents to the early pregnancy unit with mild left iliac fossa pain. Examination is normal. She has a positive urine pregnancy test. Her serum human chorionic gonadotrophin (hCG) is 700 IU/L. A transvaginal ultrasound scan reports: ‘Bulky anteverted uterus with a 2 mm cystic area centrally located within the endometrial cavity. Both ovaries have normal ultrasonic appearances. There are no adnexal masses or free fluid in the pelvis.’ What is the most appropriate management?",
+      "options": [
+        "Diagnostic laparoscopy +/- proceed",
+        "Methotrexate therapy",
+        "Serum h(human chorionic gonadotrophin) measurement in 48 hours",
+        "Serum progesterone",
+        "Ultrasound scan in seven days"
+      ],
+      "answer": "Serum h(human chorionic gonadotrophin) measurement in 48 hours"
+    },
+    {
+      "question": "A 70-year-old had noticed that her voice has deepened and she has increasing hair on her face over the last three years. Serum testosterone is elevated at 7.2 nmol/L and DHE(dehydroepiandrosterone) and urinary 17 ketosteroids are normal. Which of the following is the most likely diagnosis?",
+      "options": [
+        "Adrenal carcinoma",
+        "Congenital adrenal hyperplasia",
+        "Ovarian hyperthecosis",
+        "Polycystic ovary syndrome",
+        "Sertoli Leydig cell tumour"
+      ],
+      "answer": "Ovarian hyperthecosis"
+    },
+    {
+      "question": "A 45-year-old woman underwent total abdominal hysterectomy for heavy menstrual bleeding. She has received treatment for CIN3 and is on annual smears. Hysterectomy specimen has reported no CIN. What would be the management plan?",
+      "options": [
+        "Continue annual smears",
+        "HPV testing",
+        "No follow up",
+        "Vault smear in 6 months",
+        "Vault smear in 12 months"
+      ],
+      "answer": "Vault smear in 6 months"
+    },
+    {
+      "question": "A 30-year-old woman presents to the infertility clinic with primary infertility and dysmenorrhoea and is found on ultrasound to have a 6 cm endometrioma in the left ovary. What is the most appropriate initial management?",
+      "options": [
+        "Gonadotrophin releasing hormone agonist for six months",
+        "In-vitro fertilisation",
+        "Intrauterine insemination",
+        "Laparoscopic drainage of the endometrioma",
+        "Laparoscopic excision of the endometrioma"
+      ],
+      "answer": "Laparoscopic excision of the endometrioma"
+    }
+  ]
+}
