@@ -1,0 +1,2045 @@
+{
+	"title" : "Botany",
+	"questions" : [
+
+		{
+			"question": "Agar-Agar is obtained from",
+			"options": [
+				"Gelidium",
+				"Polysiphonia",
+				"Fucus",
+				"Laminaria"
+			],
+			"answer": "Gelidium"
+		},
+		{
+			"question": "NADH from the Krebs cycle is approximately equal to",
+			"options": [
+				"3 ATP",
+				"2 ATP",
+				"4 ATP",
+				"6 ATP"
+			],
+			"answer": "3 ATP"
+		},
+		{
+			"question": "In mitochondrial electron transport chains, the final c acceptor is",
+			"options": [
+				"None of these",
+				"H2O",
+				"H2O2",
+				"NAD+"
+			],
+			"answer": "None of these"
+		},
+		{
+			"question": "The movement of water from cell to cell via plasmadesmata is called",
+			"options": [
+				"Apoplastic",
+				"Symplastic",
+				"Transmembrane",
+				"Facilitated"
+			],
+			"answer": "Apoplastic"
+		},
+		{
+			"question": "In maize plant, the CO2 fixation mechanism is called",
+			"options": [
+				"C4 pathway",
+				"C3 pathway",
+				"CAM pathway",
+				"C3 – C4 intermediate"
+			],
+			"answer": "C4 pathway"
+		},
+		{
+			"question": "Salt-loving plants are known as",
+			"options": [
+				"Halophytes",
+				"Glycophytes",
+				"Xerophytes",
+				"Mesophytes"
+			],
+			"answer": "Halophytes"
+		},
+		{
+			"question": "With the addition of solution to a liquid system, the water potential of the system",
+			"options": [
+				"Decreases",
+				"Increases",
+				"Remains stable",
+				"Remains variable"
+			],
+			"answer": "Decreases"
+		},
+		{
+			"question": "The conversion of pyruvate into acetyl C0. A is called",
+			"options": [
+				"Glycolysis",
+				"Fermentation",
+				"Oxidative carboxylation",
+				"B-Oxidation"
+			],
+			"answer": "Glycolysis"
+		},
+		{
+			"question": "Between adenine and thymine, there are",
+			"options": [
+				"Two hydrogen bonds",
+				"3 hydrogen bonds",
+				"One hydrogen bond",
+				"4 hydrogen bonds"
+			],
+			"answer": "Two hydrogen bonds"
+		},
+		{
+			"question": "The stage of meiosis in which pairing of homologous chromosomes starts is called",
+			"options": [
+				"Zygotene",
+				"Leptotene",
+				" Diplotene",
+				" Pachytene"
+			],
+			"answer": "Zygotene"
+		},
+		{
+			"question": "The site of chromosome on which a gene is located is called",
+			"options": [
+				" Locus",
+				"Allele",
+				" Site",
+				"Trait"
+			],
+			"answer": " Locus"
+		},
+		{
+			"question": "In a dihybrid cross, the ratio of F2 generation is",
+			"options": [
+				"9:3:3:1",
+				"3:1",
+				"1:2:1",
+				"1:1"
+			],
+			"answer": "9:3:3:1"
+		},
+		{
+			"question": "When a single gene has multiple effects, the phenomenon is called",
+			"options": [
+				"Pleiotropy",
+				"Codominance",
+				"Epistasis",
+				"Genostasis"
+			],
+			"answer": "Pleiotropy"
+		},
+		{
+			"question": "Lamarck’s theory of evolution was published in",
+			"options": [
+				"1809",
+				"1807",
+				"1808",
+				"1810"
+			],
+			"answer": "1809"
+		},
+		{
+			"question": "The book “Origin of Species” was written by",
+			"options": [
+				"Darwin",
+				"Linnaeus",
+				"Lamarck",
+				"Mendel"
+			],
+			"answer": "Darwin"
+		},
+		{
+			"question": "The interaction between algae and fungi to form lichen is called",
+			"options": [
+				"Mutalism",
+				"Parasitism",
+				"Commensalism",
+				"Amensalism"
+			],
+			"answer": "Mutalism"
+		},
+		{
+			"question": "The actual location or place where an organism lives is called",
+			"options": [
+				"Habitat",
+				"Ecosystem",
+				"Niche",
+				"Biome"
+			],
+			"answer": "Habitat"
+		},
+		{
+			"question": "Which of the biomes has been increased in area by human activities",
+			"options": [
+				"Desert",
+				"Savanna",
+				"Grassland",
+				"Coniferous forest"
+			],
+			"answer": "Desert"
+		},
+		{
+			"question": "Which zone of the lake ecosystem consists of phyto-and zoo-planktons",
+			"options": [
+				"Limnetic zone",
+				"Littoral zone",
+				"Profundal zone",
+				"Water deep layers"
+			],
+			"answer": "Limnetic zone"
+		},
+		{
+			"question": "Which of the following is a biotic component of an ecosystem",
+			"options": [
+				"All of these",
+				"Producers",
+				"Consumers",
+				"Decomposers"
+			],
+			"answer": "All of these"
+		},
+		{
+			"question": "A sequence of changes in the community structure of an ecosystem over a period of time is called",
+			"options": [
+				"Succession",
+				"Natural selection",
+				"Neo-Darwinism",
+				" Lamarckism"
+			],
+			"answer": "Succession"
+		},
+		{
+			"question": "Plants which are not differentiated into roots, stem and leaves are grouped under",
+			"options": [
+				"Thallophytes",
+				"Gymnosperms",
+				"Pteridophytes",
+				"Spermatophytes"
+			],
+			"answer": "Thallophytes"
+		},
+		{
+			"question": "Syconus fruit develops from",
+			"options": [
+				"hypanthodium",
+				"catkin",
+				"verticillaster",
+				"cyathium"
+			],
+			"answer": "hypanthodium"
+		},
+		{
+			"question": "The minimum time interval required between application of stimulus and production of response is",
+			"options": [
+				"reaction time",
+				"conversion time ",
+				"relaxation time",
+				"presentation time"
+			],
+			"answer": "reaction time"
+		},
+		{
+			"question": "Chromosome end is called",
+			"options": [
+				"telomere",
+				"centromere",
+				"satellite",
+				"maramere"
+			],
+			"answer": "telomere"
+		},
+		{
+			"question": "A medicinal plant is",
+			"options": [
+				"Rauwolffia serpentina",
+				"Brassica oleracea",
+				"Coffea arabica",
+				"Cryptostegia grandiflora"
+			],
+			"answer": "Rauwolffia serpentina"
+		},
+		{
+			"question": "Polyribosomes are aggregates of",
+			"options": [
+				"several ribosomes held together by string of m-RNA",
+				"peroxisomes",
+				"only r-RNA",
+				"ribosomes and r-RNA"
+			],
+			"answer": "several ribosomes held together by string of m-RNA"
+		},
+		{
+			"question": "Number of ATP molecules produced by each NADPH is",
+			"options": [
+				"3 ",
+				"2",
+				"1",
+				"5"
+			],
+			"answer": "3 "
+		},
+		{
+			"question": "The term protoplasm was coined by",
+			"options": [
+				"Purkinje",
+				"Robert Brown",
+				"Dujardin",
+				"Robert Hooke"
+			],
+			"answer": "Purkinje"
+		},
+		{
+			"question": "Final electron acceptor in respiration is",
+			"options": [
+				"oxygen",
+				"hydrogen",
+				"cytochrome",
+				"dehydrogenase"
+			],
+			"answer": "oxygen"
+		},
+		{
+			"question": "The loading of phloem during translocation means",
+			"options": [
+				"pouring of sugars into phloem",
+				"strengthening of phloem fibers",
+				"separation of phloem parenchyma",
+				"elongation of phloem cells"
+			],
+			"answer": "pouring of sugars into phloem"
+		},
+		{
+			"question": "In C3 plants first stable product photosynthesis during dark reaction is",
+			"options": [
+				"PGA",
+				"Pyruvic acid",
+				"RuBP",
+				"Oxalo acetic acid"
+			],
+			"answer": "PGA"
+		},
+		{
+			"question": "Plant hormone causing abscission of leaves, senescence, bud dormancy and inhibition of cell division is",
+			"options": [
+				"ABA",
+				"cytokinins",
+				"ethylene",
+				"IAA"
+			],
+			"answer": "ABA"
+		},
+		{
+			"question": "Which one of the following essential elements can land plants normally obtain directly from air",
+			"options": [
+				"Nitrogen",
+				"Hydrogen",
+				"Carbon",
+				"Phosphorus"
+			],
+			"answer": "Nitrogen"
+		},
+		{
+			"question": "In a-helix secondary structure, hydrogen bonds lie between amide group of one amino acid and carbonyl group of",
+			"options": [
+				"fourth amino acid",
+				"fifth amino acid",
+				"3rd amino acid",
+				"2nd amino acid"
+			],
+			"answer": "fourth amino acid"
+		},
+		{
+			"question": "Which of the following is used to determine the rate of transpiration in plants",
+			"options": [
+				"Potometers",
+				"Porometer/hygrometer",
+				"Auxanometer",
+				"Tensiometer/barometer"
+			],
+			"answer": "Potometers"
+		},
+		{
+			"question": "A nucleoside is",
+			"options": [
+				"purine/pyramidine + sugar",
+				"purine/pyramidine + phosphate",
+				"Pyramidine + purine + phosphate",
+				"Purine + sugar + phosphate"
+			],
+			"answer": "purine/pyramidine + sugar"
+		},
+		{
+			"question": "Feather stigma is present in",
+			"options": [
+				"Wheat",
+				"Poppy",
+				"Hibiscus",
+				"Pea"
+			],
+			"answer": "Wheat"
+		},
+		{
+			"question": "In angiosperms regarding development of microgametophyte each microspore mother cell undergoes",
+			"options": [
+				"Meiosis to produce 4 haploid microspores",
+				"Two successive meiotic division to form 4 microspores",
+				"Two successive mitosis to form 4 microspores",
+				"Mitosis to produce 4 microspores"
+			],
+			"answer": "Meiosis to produce 4 haploid microspores"
+		},
+		{
+			"question": "Formation of diploid embryosac from diploid vegetative structure, e.g., nucellus or integument etc., without meiosis is called",
+			"options": [
+				"Apospory",
+				"Apomixis",
+				"Diplospory",
+				"Adventives polyembryony"
+			],
+			"answer": "Apospory"
+		},
+		{
+			"question": "Pmcess of water exudation through hydathodes is known as",
+			"options": [
+				"Guttation",
+				"Transpiration",
+				"Evaporation",
+				"Bleeding"
+			],
+			"answer": "Guttation"
+		},
+		{
+			"question": "Basal placentation is found in the family",
+			"options": [
+				"Asteraceae",
+				"Fabaceae",
+				"Solanaceae",
+				"Malvaceae"
+			],
+			"answer": "Asteraceae"
+		},
+		{
+			"question": "Insectivorous plants grow in",
+			"options": [
+				"Nitrogen deficient soil",
+				"Nitrogen rich soil",
+				"Potassium deficient soil",
+				"Carbohydrate rich soil"
+			],
+			"answer": "Nitrogen deficient soil"
+		},
+		{
+			"question": "In a pond ecosystem, benthos means",
+			"options": [
+				"Primary consumes in the bottom of a pond",
+				"All phytoplankton’s",
+				"Large fishes eating small ones",
+				"Zooplanktons on water surface"
+			],
+			"answer": "Primary consumes in the bottom of a pond"
+		},
+		{
+			"question": "Eyes on potato tubers represent",
+			"options": [
+				"Nodes with buds",
+				"Rootlets",
+				"Scars",
+				"Sutures"
+			],
+			"answer": "Nodes with buds"
+		},
+		{
+			"question": "Fungus without mycelium is",
+			"options": [
+				"Saccharomyces",
+				"Mucor",
+				"Rhizopus",
+				"Puccinia"
+			],
+			"answer": "Saccharomyces"
+		},
+		{
+			"question": "The organelles involved in photorespiration are",
+			"options": [
+				"Chloroplast, mitochondria and peroxisome",
+				"Mitochondria, peroxisome and glyoxysomes",
+				"Chloroplast, peroxisome and glythisome",
+				"Glyoxysomes, chloroplast and mithondria"
+			],
+			"answer": "Chloroplast, mitochondria and peroxisome"
+		},
+		{
+			"question": "Floridean starch is found in",
+			"options": [
+				"Rhodophyceae",
+				"Phaeophyceae",
+				"Myxophyceae",
+				"Chlorophyceae"
+			],
+			"answer": "Rhodophyceae"
+		},
+		{
+			"question": "The hormone reducing transpiration rate by inducing stomatal closure is",
+			"options": [
+				"ABA",
+				"Ethylene",
+				"Cytokipin",
+				"Auxin"
+			],
+			"answer": "ABA"
+		},
+		{
+			"question": "In bryoph4tes the female sex organ is called",
+			"options": [
+				"Archegonium",
+				"Antheridium",
+				"Carpogonium",
+				"Ascogonium"
+			],
+			"answer": "Archegonium"
+		},
+		{
+			"question": "The pigment involved in photo morphogenetic movements is",
+			"options": [
+				"Phytochrome",
+				"Cytochrome",
+				"Chromatin",
+				"Vernalin"
+			],
+			"answer": "Phytochrome"
+		},
+		{
+			"question": "First CO2 receptor in C4 plants is",
+			"options": [
+				"PEP",
+				"PGA",
+				"RuBD",
+				"OAA"
+			],
+			"answer": "PEP"
+		},
+		{
+			"question": "The components of an ecosystem are",
+			"options": [
+				"Biotic and abiotic",
+				"Man and plants",
+				"Plants and animals",
+				"Trees and weeds"
+			],
+			"answer": "Biotic and abiotic"
+		},
+		{
+			"question": "The two great industrial tragedies  MIC and Chemobyl occurred respectively in",
+			"options": [
+				"Bhopal 1984, Ukraine 1986",
+				"Madhya Pradesh 1980, Russia 1990",
+				"Bhopal 1980, Ukraine 1984",
+				"Ukraine 1990, Bhopal 1986"
+			],
+			"answer": "Bhopal 1984, Ukraine 1986"
+		},
+		{
+			"question": "Tyloses are",
+			"options": [
+				"Tracheal plugs plugging the lumen of vessels and tracheids",
+				"Sieve plates",
+				"Secretory cells",
+				"Lactiferous channels"
+			],
+			"answer": "Tracheal plugs plugging the lumen of vessels and tracheids"
+		},
+		{
+			"question": "The 10% energy transfer law of food chain was given by",
+			"options": [
+				" Lindmann",
+				"Lederberg",
+				"Weismann",
+				"Lindley"
+			],
+			"answer": " Lindmann"
+		},
+		{
+			"question": "Reaction centre of photo system-I in green plants is",
+			"options": [
+				"P700",
+				"P780",
+				"P690",
+				"P680"
+			],
+			"answer": "P700"
+		},
+		{
+			"question": "Number of cotyledons in Zea mays, Cycas and Pinus respectively are",
+			"options": [
+				"1, 2, many",
+				"1, 2, 4",
+				"2, 2, many",
+				"2, 1, 4"
+			],
+			"answer": "1, 2, many"
+		},
+		{
+			"question": "Double fertilization is found in",
+			"options": [
+				"Angiosperms",
+				"Bryophytes",
+				"Gymnosperms",
+				"Pteridophytes"
+			],
+			"answer": "Angiosperms"
+		},
+		{
+			"question": "If a sporangium derived from a single cell is called",
+			"options": [
+				"Leptosporangiate",
+				"Eusporangiate",
+				"Heterosporangiate",
+				"None of the above"
+			],
+			"answer": "Leptosporangiate"
+		},
+		{
+			"question": "The term water potential was proposed by",
+			"options": [
+				"Slatyer and Taylor",
+				"Godlewski",
+				"Dixon and Jolly",
+				"J. C. Bose"
+			],
+			"answer": "Slatyer and Taylor"
+		},
+		{
+			"question": "A plant having two types of haploid structures in its life cycle is known as",
+			"options": [
+				"Haplobiontic",
+				"Diplobiontic",
+				"Haplontic",
+				"Diplontic"
+			],
+			"answer": "Haplobiontic"
+		},
+		{
+			"question": "Ribozyme is",
+			"options": [
+				"RNA with enzymatic activity",
+				"Enzyme",
+				"Hormone",
+				"Protein"
+			],
+			"answer": "RNA with enzymatic activity"
+		},
+		{
+			"question": "A chain of amino acids joined by peptide bonds is called as",
+			"options": [
+				"Polypeptide chain",
+				"Peptide chain",
+				"Polyamino acid chain",
+				"Nucleotide chain"
+			],
+			"answer": "Polypeptide chain"
+		},
+		{
+			"question": "Root cap is not found in",
+			"options": [
+				"Xerophytes",
+				"Halophytes",
+				"Hydrophytes",
+				"Mesophytes"
+			],
+			"answer": "Xerophytes"
+		},
+		{
+			"question": "The high yielding hybrid crop varieties to exploit hybrid vigour, the farmers need to Purchase fresh hybrid seed every year because",
+			"options": [
+				"Hybrid vigour is not long standing due to inbreeding depression",
+				"They are not allowed to grow their own seed",
+				"It is always associated with 4ncreased heterozygosity",
+				"Government has accepted Dunkel’s proposals"
+			],
+			"answer": "Hybrid vigour is not long standing due to inbreeding depression"
+		},
+		{
+			"question": "In Bignonia eapreolata pollination is carried out by",
+			"options": [
+				"Bat",
+				"Bird",
+				"Insect",
+				"Wind"
+			],
+			"answer": "Bat"
+		},
+		{
+			"question": "Fragrant flowers with well developed nectarines are an adaptation for",
+			"options": [
+				"Entamophily",
+				"Hydrophily",
+				"Ornithophily",
+				"Anemophily"
+			],
+			"answer": "Entamophily"
+		},
+		{
+			"question": "Genetic engineering is related with",
+			"options": [
+				"Euphenics",
+				"Eugenics",
+				"Euthenics",
+				"All of these"
+			],
+			"answer": "Euphenics"
+		},
+		{
+			"question": "Floating roots are the characteristics feature of",
+			"options": [
+				"Jussiaea",
+				"Cuscuta",
+				"Vanda",
+				"Viscum"
+			],
+			"answer": "Jussiaea"
+		},
+		{
+			"question": "Various fungi are known to accumulate considerable quantities of divalent metals, e.g",
+			"options": [
+				"Pb",
+				"Cd",
+				"Zn",
+				"All of these"
+			],
+			"answer": "Pb"
+		},
+		{
+			"question": "Soil salinity is measured by",
+			"options": [
+				"Conductivity meter",
+				"Calorimeter",
+				"Porometer",
+				"Potometer"
+			],
+			"answer": "Conductivity meter"
+		},
+		{
+			"question": "Which one of the following is the earliest land plant",
+			"options": [
+				"Rhynia",
+				"Cycas",
+				"Ulothrix",
+				"Synchytrium"
+			],
+			"answer": "Rhynia"
+		},
+		{
+			"question": "The scutellum of the gram embryo is a",
+			"options": [
+				"Vestigial organ",
+				"Photosynthetic organ",
+				"Absorptive organ",
+				"Protective organ"
+			],
+			"answer": "Vestigial organ"
+		},
+		{
+			"question": "The diameter of Z-DNA is",
+			"options": [
+				"18A",
+				"45A",
+				"20A",
+				"34 A"
+			],
+			"answer": "18A"
+		},
+		{
+			"question": "The genes, which remain confined to differential region of ‘Y’ chromosome, are",
+			"options": [
+				"Holandric genes",
+				"Autosomal genes",
+				"Sex linked genes",
+				"Mutant genes"
+			],
+			"answer": "Holandric genes"
+		},
+		{
+			"question": "The hormone responsible for ripening of fruits is",
+			"options": [
+				"Ethylene",
+				"Cytokinin",
+				"Auxin",
+				"ABA"
+			],
+			"answer": "Ethylene"
+		},
+		{
+			"question": "Coir is the commercial product of coconuts",
+			"options": [
+				"Mesocarp",
+				"Pericarp",
+				"Endocarp",
+				"Endosperm"
+			],
+			"answer": "Mesocarp"
+		},
+		{
+			"question": "Polygenic genes show",
+			"options": [
+				"Different phenotype",
+				"Different genotype",
+				"Similar phenotype",
+				"Similar genotype"
+			],
+			"answer": "Different phenotype"
+		},
+		{
+			"question": "Select the correct statement",
+			"options": [
+				"Legumes fix nitrogen only by bacteria present in nodules",
+				"None of the above",
+				"Legumes fix nitrogen through bacteria living in fruits root",
+				"Legumes are incapable of fixing nitrogen"
+			],
+			"answer": "Legumes fix nitrogen only by bacteria present in nodules"
+		},
+		{
+			"question": "Hormogonia are the vegetative reproductive structures of",
+			"options": [
+				"Oscillatoria",
+				"Ulothrix",
+				"Spirogyra",
+				"Chlamydomonas"
+			],
+			"answer": "Oscillatoria"
+		},
+		{
+			"question": "Azotobacter and Beijerinckia are the examples of",
+			"options": [
+				"Non-symbiotic nitrogen-fixers",
+				"Symbiotic nitrogen-fixers",
+				"Ammonifying bacteria",
+				"Disease causing bacteria"
+			],
+			"answer": "Non-symbiotic nitrogen-fixers"
+		},
+		{
+			"question": "Smilax a climbing genus belongs to",
+			"options": [
+				"Liliaceae",
+				"Cruciferae",
+				"Solanaceae",
+				"Cucurbitaceae"
+			],
+			"answer": "Liliaceae"
+		},
+		{
+			"question": "In certain parts of India, muscular dystrophy is commonly found amongst the poor people because they eat cheap pulse from the plant",
+			"options": [
+				"Lathyrus sativus",
+				"Pisum satiuvm",
+				"Cicer arietmum",
+				"Phaseolus mungo"
+			],
+			"answer": "Lathyrus sativus"
+		},
+		{
+			"question": "If a dwarf pea plant was treated with gibberellic acid, it became as tall, as tall pea plants. If these pea plants are crossed with pure tall pea plants, what will be the phenotypic ratio in F1 generation",
+			"options": [
+				"100% tall plants",
+				"75% tall and 25% dwarf plants",
+				"50% tall and 50% dwarf plants",
+				"All dwarf plants"
+			],
+			"answer": "100% tall plants"
+		},
+		{
+			"question": "Coichicine is obtained from Colchicum autumnal. It belongs to family",
+			"options": [
+				"Liliaceae",
+				"Asteraceae",
+				"Solanaceae",
+				"Leguminoceae"
+			],
+			"answer": "Liliaceae"
+		},
+		{
+			"question": "Moll’s experiment explains that",
+			"options": [
+				"Carbon dioxide is essential for photosynthesis",
+				"Chlorophyll and water are necessary for photosynthesis",
+				"Light and water are essential for photosynthesis",
+				"All of the above are correct"
+			],
+			"answer": "Carbon dioxide is essential for photosynthesis"
+		},
+		{
+			"question": "Energy transfer from one traphic level to other in a food chain is",
+			"options": [
+				"10%",
+				"20%",
+				"1%",
+				"2%"
+			],
+			"answer": "10%"
+		},
+		{
+			"question": "Stem is reduced in",
+			"options": [
+				"Bulb",
+				"Tuber",
+				"Corm",
+				"Rhizome"
+			],
+			"answer": "Bulb"
+		},
+		{
+			"question": "Heterophilly of Limnophila is",
+			"options": [
+				"Adaptive",
+				"Habitual",
+				"Developmental",
+				"Environmental"
+			],
+			"answer": "Adaptive"
+		},
+		{
+			"question": "Synandrous condition is the fusion of",
+			"options": [
+				"Both filaments and anthers",
+				"Filaments only",
+				"Anthers only",
+				"Petals"
+			],
+			"answer": "Both filaments and anthers"
+		},
+		{
+			"question": "Which one yields sunn hemp",
+			"options": [
+				"Crotolaria",
+				"Cannabis",
+				"Hibiscus",
+				"Corchorus"
+			],
+			"answer": "Crotolaria"
+		},
+		{
+			"question": "Rod-shaped elongated thick-walled lignified dead cells found in seed coat of pulses (Legumes) are",
+			"options": [
+				"Macrosciereids",
+				"Astrosclereids",
+				"Brachysclereids",
+				"Osteosclereids"
+			],
+			"answer": "Macrosciereids"
+		},
+		{
+			"question": "Decot root having more than six vascular bundles are found in",
+			"options": [
+				"Ficus",
+				"Ranunculus",
+				"Sunflower",
+				"Pea"
+			],
+			"answer": "Ficus"
+		},
+		{
+			"question": "Regulator gene controls chemical synthesis (Operon concept) by",
+			"options": [
+				"Inhibiting transcription of mRNA",
+				"Inhibiting enzymes",
+				"Inhibiting passage of mRNA",
+				"Inhibiting substrate enzyme reaction"
+			],
+			"answer": "Inhibiting transcription of mRNA"
+		},
+		{
+			"question": "‘Illegitimate crossing over’ is another term for",
+			"options": [
+				"Reciprocal translocation",
+				"None of the above",
+				"Transversion",
+				"Transition"
+			],
+			"answer": "Reciprocal translocation"
+		},
+		{
+			"question": "A substance unrelated to substrate but capable of reversibly changing activity of enzyme by binding to a site other than active site is called",
+			"options": [
+				"Allosteric modulator/inhibitor",
+				"Catalytic inhibitor",
+				"Non-competitive inhibitor",
+				"Competitive inhibitor"
+			],
+			"answer": "Allosteric modulator/inhibitor"
+		},
+		{
+			"question": "Golgi apparatus is absent in",
+			"options": [
+				"Bacteria and blue-green algae",
+				"Liver cells",
+				"Yeast",
+				"Higher plants"
+			],
+			"answer": "Bacteria and blue-green algae"
+		},
+		{
+			"question": "Which one is common amongst nucleus, chloroplast and mitochondria",
+			"options": [
+				"Nucleic acid",
+				"Carbohydrate metabolism",
+				"Thylakoids",
+				"Cristae"
+			],
+			"answer": "Nucleic acid"
+		},
+		{
+			"question": "Sporocarp is a reproductive structure of",
+			"options": [
+				"Some aquatic ferns",
+				"Some algae",
+				"Angiosperms having spores",
+				"Bryophytes"
+			],
+			"answer": "Some aquatic ferns"
+		},
+		{
+			"question": "Pond ecosystem shows",
+			"options": [
+				"Inverted pyramid of biomass",
+				"Inverted pyramid of number",
+				"Upright pyramid of biomass",
+				"Inverted pyramid of energy"
+			],
+			"answer": "Inverted pyramid of biomass"
+		},
+		{
+			"question": "Under anaerobic conditions, bacterium Pseudomonas changes",
+			"options": [
+				"Nitrate to molecular nitrogen",
+				"Nitrate to ammonia",
+				"Nitrate to nitrite",
+				"Nitrite to nitrate"
+			],
+			"answer": "Nitrate to molecular nitrogen"
+		},
+		{
+			"question": "Deciduous forests have",
+			"options": [
+				"Broad-leaved trees",
+				"Variety of grasses",
+				"narrow-leaved trees",
+				"Variety of crocodiles"
+			],
+			"answer": "Broad-leaved trees"
+		},
+		{
+			"question": "Physiologically active form of Phytochrome is",
+			"options": [
+				"P730/Fr",
+				"P660/Pr",
+				"P700",
+				"P680"
+			],
+			"answer": "P730/Fr"
+		},
+		{
+			"question": "The archesporium of ovule is",
+			"options": [
+				"Single celled hypodermal",
+				"Single celled lateral",
+				"Single celled central",
+				"Single celled terminal"
+			],
+			"answer": "Single celled hypodermal"
+		},
+		{
+			"question": "Which is correct statement",
+			"options": [
+				"Seed is formed before double fertilization",
+				"Fruit is produced after double fertilization",
+				"Seed is formed after one fertilization",
+				"Seed can not be formed after on fertilization"
+			],
+			"answer": "Seed is formed before double fertilization"
+		},
+		{
+			"question": "Hormone used in tissue culture for better growth is",
+			"options": [
+				"Vernalin",
+				"Cytokinin",
+				"Gibberellin",
+				"Auxin"
+			],
+			"answer": "Vernalin"
+		},
+		{
+			"question": "Grafting is employed for better and quicker yield of varieties of",
+			"options": [
+				"Apple",
+				"Mango",
+				"Citrus",
+				"Tea"
+			],
+			"answer": "Apple"
+		},
+		{
+			"question": "Primary root is",
+			"options": [
+				"Positive hydrotropic",
+				"Positively geotropic",
+				"Negative geotropic",
+				"Negative hydrotropic"
+			],
+			"answer": "Positive hydrotropic"
+		},
+		{
+			"question": "Cholodny-Went theory is connected with",
+			"options": [
+				"Nastic movement",
+				"Geotropism",
+				"Phototropism",
+				"Photo morphogenesis"
+			],
+			"answer": "Nastic movement"
+		},
+		{
+			"question": "Photorespiration is related to",
+			"options": [
+				"Peroxisome",
+				"Glyoxysomes",
+				"Mitochondria",
+				"Chloroplast"
+			],
+			"answer": "Peroxisome"
+		},
+		{
+			"question": "2-4-diphenoxyacetic acid is a",
+			"options": [
+				"Weedicide",
+				"Herbicide",
+				"Pesticide",
+				"Fungicide"
+			],
+			"answer": "Weedicide"
+		},
+		{
+			"question": "Ergot is obtained from",
+			"options": [
+				"Claviceps Purpurea",
+				"Alternaria",
+				"Yeast",
+				"Albugo"
+			],
+			"answer": "Claviceps Purpurea"
+		},
+		{
+			"question": "B-DNA is",
+			"options": [
+				"Antiparallel and right handed",
+				"Antiparallel and left handed",
+				"Parallel and right handed",
+				"Parallel and left handed"
+			],
+			"answer": "Antiparallel and right handed"
+		},
+		{
+			"question": "Stomata in bryophytes are present in the of",
+			"options": [
+				"Capsule",
+				"Leaf",
+				"Stem",
+				"Seta"
+			],
+			"answer": "Capsule"
+		},
+		{
+			"question": "Haploid cells belong to",
+			"options": [
+				"Megaspore, pollen grain, antipodal",
+				"Integument, pollen grain and antipodal",
+				"Embryo, endosperm and pollen grain",
+				"Integument, pollen grain, endosperm"
+			],
+			"answer": "Megaspore, pollen grain, antipodal"
+		},
+		{
+			"question": "Rubber is commercially obtained from",
+			"options": [
+				"Euphorbia",
+				"Betula",
+				"Hibiscus",
+				"Pinus"
+			],
+			"answer": "Euphorbia"
+		},
+		{
+			"question": "Endoplasmic reticulum remain in continuation with",
+			"options": [
+				"nucleus",
+				"Ribosomes",
+				"Mitochondria",
+				"Golgi bodies"
+			],
+			"answer": "nucleus"
+		},
+		{
+			"question": "Chondriosome is discovered by",
+			"options": [
+				"Benda",
+				"Messelson",
+				"Dujardin",
+				"Taylor"
+			],
+			"answer": "Benda"
+		},
+		{
+			"question": "The cell wall of both bacteria and cyanobactena contains",
+			"options": [
+				"muramic acid",
+				"Protein",
+				"Pectin",
+				"Lipid"
+			],
+			"answer": "muramic acid"
+		},
+		{
+			"question": "Development of saprophyte from gametophyte, is called",
+			"options": [
+				"Apogamy",
+				"Dip1ospory",
+				"Apospory",
+				"Apomixis"
+			],
+			"answer": "Apogamy"
+		},
+		{
+			"question": "Chiropterophily is seen in",
+			"options": [
+				"Kigelea",
+				"Salvia",
+				"Orchid",
+				"Vallesneria"
+			],
+			"answer": "Kigelea"
+		},
+		{
+			"question": "Thermal algae can live in",
+			"options": [
+				"Hot water streams of 70°C",
+				"Saline soil",
+				"Deserts",
+				"Snow balls"
+			],
+			"answer": "Hot water streams of 70°C"
+		},
+		{
+			"question": "Law of limiting factor was given by",
+			"options": [
+				"Blackman",
+				"Hill",
+				"Taylor",
+				"Amon"
+			],
+			"answer": "Blackman"
+		},
+		{
+			"question": "Haploid plants can be obtained from",
+			"options": [
+				"Anther culture",
+				"Root culture",
+				"Bud culture",
+				"Leaf culture"
+			],
+			"answer": "Anther culture"
+		},
+		{
+			"question": "Embryo sac represents",
+			"options": [
+				"Megagametophyte",
+				"Megasporophyll",
+				"Megagamete",
+				"Megaspore"
+			],
+			"answer": "Megagametophyte"
+		},
+		{
+			"question": "Deficiency of molybdenum causes",
+			"options": [
+				"Mottling",
+				"Wilting",
+				"Reclamation",
+				"Necrosis"
+			],
+			"answer": "Mottling"
+		},
+		{
+			"question": "The first reaction in photorespiration is",
+			"options": [
+				"Oxygenation",
+				"Decarboxylation",
+				"Carboxylation",
+				"Phosphorylation"
+			],
+			"answer": "Oxygenation"
+		},
+		{
+			"question": "The specific characters of C4 plant is",
+			"options": [
+				"Kranz anatomy",
+				"Bulliform cells",
+				"Parallel venation",
+				"Isobilateral leaf"
+			],
+			"answer": "Kranz anatomy"
+		},
+		{
+			"question": "The ovule in which embryo sac become horse shoe shaped in",
+			"options": [
+				"Amphitropous",
+				"Camphylotropous",
+				"Orthotropous",
+				"Anatropous"
+			],
+			"answer": "Amphitropous"
+		},
+		{
+			"question": "Caruncle develops-from",
+			"options": [
+				"Outer integument",
+				"Ctyledon",
+				"Funiculus",
+				"Inner integuments"
+			],
+			"answer": "Outer integument"
+		},
+		{
+			"question": "Coir of commerce is obtained from",
+			"options": [
+				"Leaves of coconut",
+				"Stem of jute",
+				"Mesocarp of coconut",
+				"Endocarp of coconut"
+			],
+			"answer": "Leaves of coconut"
+		},
+		{
+			"question": "In a national park protection is provided to",
+			"options": [
+				"Flora and fauna",
+				"Entire ecosystem",
+				"Fauna only",
+				"Flora only"
+			],
+			"answer": "Flora and fauna"
+		},
+		{
+			"question": "Morphine is obtained from",
+			"options": [
+				"Papaver somniferum",
+				"Aconitum nacelles",
+				"Rauwolffia serpentine",
+				"Cinchona officinalis"
+			],
+			"answer": "Papaver somniferum"
+		},
+		{
+			"question": "Azides and cyanide inhibit",
+			"options": [
+				"Prophase",
+				"Metaphase",
+				"Anaphase",
+				"Telophase"
+			],
+			"answer": "Prophase"
+		},
+		{
+			"question": "Cell organelle covered by single unit membrane is",
+			"options": [
+				"All of these",
+				"Peroxisomes",
+				"Lysosome",
+				"Glyoxisome"
+			],
+			"answer": "All of these"
+		},
+		{
+			"question": "Blue-green alga that causes red blooms is",
+			"options": [
+				"Trichodesmium",
+				"Nostoc",
+				"Gleacapsa",
+				"Anabaena"
+			],
+			"answer": "Trichodesmium"
+		},
+		{
+			"question": "Gingerly oil (till) is got from",
+			"options": [
+				"Sesamum indicum",
+				"Brassica rapa",
+				"Cocos nucifera",
+				"Linus usitatissimum"
+			],
+			"answer": "Sesamum indicum"
+		},
+		{
+			"question": "In meios-I, the Centro mere undergoes",
+			"options": [
+				"No division",
+				"Division but the daughter chromosomes do not separate",
+				"ivision between prophase and metaphase",
+				"Division between anaphase and Interphase"
+			],
+			"answer": "No division"
+		},
+		{
+			"question": "Prokaryotic genetic material is",
+			"options": [
+				"Circular DNA without his tones",
+				"Liner DNA without his tones",
+				"Circular DNA + his tones",
+				"Liner DNA + his tones"
+			],
+			"answer": "Circular DNA without his tones"
+		},
+		{
+			"question": "Mary’s biological concept of species is mainly based on",
+			"options": [
+				"Reproductive isolation",
+				"Morphological traits",
+				"Modes of reproduction",
+				"Morphology and reproduction"
+			],
+			"answer": "Reproductive isolation"
+		},
+		{
+			"question": "NADH is produced in",
+			"options": [
+				"Glycolysis",
+				"Photosystem-II",
+				"Photosystem-I",
+				"Both Photosystem-I and Photosystem-II"
+			],
+			"answer": "Glycolysis"
+		},
+		{
+			"question": "Abscission layer developed during leaf fall is made of",
+			"options": [
+				"Parenchymatous cells",
+				"Sclerenchymatous cells",
+				"Sclerenchymatous cells",
+				"Cork cells"
+			],
+			"answer": "Parenchymatous cells"
+		},
+		{
+			"question": "The process by which the amount of DNA, RNA and protein can be known at a time is",
+			"options": [
+				"Autoradiography",
+				"Cell fractionation",
+				"Phase-contrast microscopy",
+				"Tissue culture"
+			],
+			"answer": "Autoradiography"
+		},
+		{
+			"question": "Retort cells are found in",
+			"options": [
+				"Sphagnum",
+				"Porella",
+				"Pogonatum",
+				"Funaria"
+			],
+			"answer": "Sphagnum"
+		},
+		{
+			"question": "The net gain of energy from one gram mole of glucose during aerobic respiration is",
+			"options": [
+				"38 ATP",
+				"40 ATP",
+				"4 ATP",
+				"2 ATP"
+			],
+			"answer": "38 ATP"
+		},
+		{
+			"question": "Chief function of phloem is conduction of",
+			"options": [
+				"Food",
+				"Minerals",
+				"Water",
+				"Air"
+			],
+			"answer": "Food"
+		},
+		{
+			"question": "Pyrenoids are the centers for formation of",
+			"options": [
+				"Starch",
+				"Fat",
+				"enzymes",
+				"Proteins"
+			],
+			"answer": "Starch"
+		},
+		{
+			"question": "Sexual reproduction in Rhizopus occurs through",
+			"options": [
+				"Gametangial copulation",
+				"Gametangial contact",
+				"Planogametic copulation",
+				"Spermatogamy"
+			],
+			"answer": "Gametangial copulation"
+		},
+		{
+			"question": "Organelles involved in photorespiration are",
+			"options": [
+				"Mitochondria, Peroxisomes and chloroplasts",
+				"Mitochondria, chloroplasts and ribosomes",
+				"Mitochondria, nucleus and ribosomes",
+				"Mitochondria, proxisomes and glyoxisomes"
+			],
+			"answer": "Mitochondria, Peroxisomes and chloroplasts"
+		},
+		{
+			"question": "Pith is produced by the activity of",
+			"options": [
+				"Ground meristem",
+				"Procambium",
+				"Protodern",
+				" Lateral metistem"
+			],
+			"answer": "Ground meristem"
+		},
+		{
+			"question": "What tissue present in leaves of Pinus conducts food and water laterally",
+			"options": [
+				"Transfusion tissue",
+				"Phloem",
+				"Xylem",
+				"Medullary rays"
+			],
+			"answer": "Transfusion tissue"
+		},
+		{
+			"question": "The site for light reaction of photosynthesis is",
+			"options": [
+				"Grana",
+				"Stoma",
+				"ER",
+				"Cytoplasm"
+			],
+			"answer": "Grana"
+		},
+		{
+			"question": "Swollen placenta, oblique septum and conniving anthers are characteristics of family",
+			"options": [
+				"Solatiaceae",
+				"Poaceae",
+				"Asterácéae",
+				"Brassicaceae"
+			],
+			"answer": "Solatiaceae"
+		},
+		{
+			"question": "Development of shoot and root is determined by",
+			"options": [
+				"Cytokinin and auxin ratio",
+				"Enzymes",
+				"Temperature",
+				"Plant nutrients"
+			],
+			"answer": "Cytokinin and auxin ratio"
+		},
+		{
+			"question": "Pyramid of number in a grassland/true ecosystem is",
+			"options": [
+				"Always upright",
+				"Always inverted",
+				"Both (a) and (b)",
+				"Spindle-shaped"
+			],
+			"answer": "Always upright"
+		},
+		{
+			"question": "The empirical formula for chlorophyll-a is",
+			"options": [
+				"C55 H72 O5N4 Mg",
+				"C45 H70 O6N4 Mg",
+				"C65 H70 O6N4 Mg",
+				"C35 H72 O5N4 Mg"
+			],
+			"answer": "C55 H72 O5N4 Mg"
+		},
+		{
+			"question": "Which one yields oil from seeds and orange dye from petals",
+			"options": [
+				"Carthamus tinctorius",
+				"Tagetus erecta",
+				"Calendulla officinalis",
+				"Helioanthus annus"
+			],
+			"answer": "Carthamus tinctorius"
+		},
+		{
+			"question": "A fern differ from a moss in prossessing",
+			"options": [
+				"Independent Sporophyte",
+				"Independent gametophyte",
+				"Flask-shaped archegonia",
+				"Swimming/flagellated anitherozoids"
+			],
+			"answer": "Independent Sporophyte"
+		},
+		{
+			"question": "The species of Pinus, seeds of which are edible is/ chilgoza comes from",
+			"options": [
+				"P. gerardiand",
+				"P. roxburghii",
+				"P. monophylla",
+				"P. sylvestris"
+			],
+			"answer": "P. gerardiand"
+		},
+		{
+			"question": "A petroleum plant is",
+			"options": [
+				"Euphorbia",
+				"Potato",
+				"Maize",
+				"Sugarcane"
+			],
+			"answer": "Euphorbia"
+		},
+		{
+			"question": "Operon model of gene regulation and organisation of prokaryotes was proposed by",
+			"options": [
+				"Jacob and Monod",
+				"Beadle and Tatum",
+				"Wilkins and Franklin",
+				"Messelson and Stahl"
+			],
+			"answer": "Jacob and Monod"
+		},
+		{
+			"question": "Artificial ripening of fruits is accomplished by treatment with",
+			"options": [
+				"Ethylene gas",
+				"Kinetin",
+				"IAA",
+				"Sodium chloride"
+			],
+			"answer": "Ethylene gas"
+		},
+		{
+			"question": "Individuals of species which occur in a particular area constitute",
+			"options": [
+				"Population",
+				"Flora and fauna",
+				"Fauna",
+				"Flora"
+			],
+			"answer": "Population"
+		},
+		{
+			"question": "Transpiration differs from evaporation in",
+			"options": [
+				"Transpiration is a physiological process while evaporation is physical process",
+				"Rate of water loss",
+				"Transpiration is physical process while evaporation is physiological process",
+				"Frequency of water loss"
+			],
+			"answer": "Transpiration is a physiological process while evaporation is physical process"
+		},
+		{
+			"question": "Arrangement of leaves on a stem branch is",
+			"options": [
+				"Phyllotaxy",
+				"Ptyxis",
+				"Venation",
+				"Violation"
+			],
+			"answer": "Phyllotaxy"
+		},
+		{
+			"question": "Water potential in leaf tissue is “positive” (near zero) during",
+			"options": [
+				"Gestation",
+				"Excessive transpiration",
+				"Excessive absorption",
+				"Low transpiration"
+			],
+			"answer": "Gestation"
+		},
+		{
+			"question": "In onion, the swollen underground structure is",
+			"options": [
+				"Bulb",
+				"Tuber",
+				"Rhizome",
+				"Root"
+			],
+			"answer": "Bulb"
+		},
+		{
+			"question": "Movement of leaves of sensitive plant, Mimosa pudica are due to",
+			"options": [
+				"Seisnonasty",
+				"Thernonasty",
+				"Hydrothpism",
+				"Chemo nasty"
+			],
+			"answer": "Seisnonasty"
+		},
+		{
+			"question": "Fragrant flowers with well developed nectarines are an adaptation for",
+			"options": [
+				"Entornophily",
+				"Hydfophily",
+				"Anemophily",
+				"Zoophily"
+			],
+			"answer": "Entornophily"
+		},
+		{
+			"question": "Cheese and yoghurt are products of",
+			"options": [
+				"Fermentation",
+				"Pasteurization",
+				"Dehydration",
+				"Distillation"
+			],
+			"answer": "Fermentation"
+		},
+		{
+			"question": "Colchicines bring about",
+			"options": [
+				"Polyploidy",
+				"Cell division",
+				"Cell elongation",
+				"Cell differentiation"
+			],
+			"answer": "Polyploidy"
+		},
+		{
+			"question": "Cell ‘A’ with O.P = 10 atm and T.P =5 atm is in contact with cell ‘B’ having O.P = 15 atm and T.P = 12 atm. The flow of water will be",
+			"options": [
+				"From B to A",
+				"No flow",
+				"Equal flow",
+				"From A to B"
+			],
+			"answer": "From B to A"
+		},
+		{
+			"question": "Select the one, which is pitcher plant",
+			"options": [
+				"Sarracenia",
+				"Aldrovanda",
+				"Utricularia",
+				"Drosera"
+			],
+			"answer": "Sarracenia"
+		},
+		{
+			"question": "Nucleotide found free in the cells is",
+			"options": [
+				"ATP",
+				"ADP",
+				"AMP",
+				"CAMP"
+			],
+			"answer": "ATP"
+		},
+		{
+			"question": "Which one does not occur is Seleaginella",
+			"options": [
+				"Homospory",
+				"Ligulate Leaves",
+				"Hetorophylly",
+				"Heterospory"
+			],
+			"answer": "Homospory"
+		},
+		{
+			"question": "Development of Sporophyte from gametophyte tissue without fusion of gametes is",
+			"options": [
+				"Apogamy",
+				"Apospory",
+				"Apomixis",
+				"Parthenogenesis"
+			],
+			"answer": "Apogamy"
+		},
+		{
+			"question": "First bionisecticide developed on commercial scale was",
+			"options": [
+				"Sporeine",
+				"Organophosphates",
+				"DDT",
+				"Quinine"
+			],
+			"answer": "Sporeine"
+		},
+		{
+			"question": "Cross between hybrid and recessive parent is",
+			"options": [
+				"Test cross",
+				"Back cross",
+				"Monohybrid cross",
+				"Dihybrid cross"
+			],
+			"answer": "Test cross"
+		},
+		{
+			"question": "Largest egg of plant kingdom belongs to",
+			"options": [
+				"Cycas",
+				"Pinus",
+				"Mangfera",
+				"Psidium"
+			],
+			"answer": "Cycas"
+		},
+		{
+			"question": "Air spaces are present in",
+			"options": [
+				"Hydrophytes",
+				"Xerophytes",
+				"Mesophytes",
+				"Al1these"
+			],
+			"answer": "Hydrophytes"
+		},
+		{
+			"question": "Thick cuticle, sunken stomates are found in leaves of",
+			"options": [
+				"Xerophytes",
+				"Hydrophytes",
+				"Mesophytes",
+				"Epiphytes"
+			],
+			"answer": "Xerophytes"
+		},
+		{
+			"question": "Cyanide resistant respiration is characteristic of",
+			"options": [
+				"Plants",
+				"Animals",
+				"Bacteria",
+				"Viruses"
+			],
+			"answer": "Plants"
+		},
+		{
+			"question": "Which can function as carrier in active ion absorption",
+			"options": [
+				"Lecithin",
+				"Cytochrome",
+				"Plastoquinone",
+				"Feradoxin"
+			],
+			"answer": "Lecithin"
+		},
+		{
+			"question": "In germinating castor seed the RQ is",
+			"options": [
+				"Less than one",
+				"Infinite",
+				"One",
+				"More than one"
+			],
+			"answer": "Less than one"
+		},
+		{
+			"question": "The factor influencing process of flowerings is",
+			"options": [
+				"Photoperiod",
+				"Soil pH",
+				"Soil water",
+				"Amount of chlorophyll"
+			],
+			"answer": "Photoperiod"
+		},
+		{
+			"question": "The storage pathogen of rice is",
+			"options": [
+				"Calanoluca oryzae",
+				"Pyricularia oryzae",
+				"Helminthosporiurn oryzae",
+				"Xanthomanas oryzae"
+			],
+			"answer": "Calanoluca oryzae"
+		},
+		{
+			"question": "The study of interelationship between species and its environment of a forest is called",
+			"options": [
+				"Autecology",
+				"Syneocology",
+				"Forest ecology",
+				"Co-operation"
+			],
+			"answer": "Autecology"
+		},
+		{
+			"question": "In moss, the middle sterile part of capsule is called",
+			"options": [
+				"Columella",
+				"Spore sac",
+				"Protonema",
+				"Foot"
+			],
+			"answer": "Columella"
+		},
+		{
+			"question": "In fern, vascular bundles are",
+			"options": [
+				"Hadrocentric",
+				"Radial",
+				"Open",
+				"Leptocentric"
+			],
+			"answer": "Hadrocentric"
+		},
+		{
+			"question": "Leptome is used for",
+			"options": [
+				"Phloem",
+				"Fibres",
+				"Xylem",
+				"Parenhyma"
+			],
+			"answer": "Phloem"
+		},
+		{
+			"question": "In angiosperm, triple fusion is necessary for the formation of",
+			"options": [
+				"Endosperm",
+				"Leaf",
+				"Pollen",
+				"Embryo"
+			],
+			"answer": "Endosperm"
+		},
+		{
+			"question": "Colchicines prevent the spindle formation during",
+			"options": [
+				"Metaphase",
+				"Prophase",
+				"Anaphase",
+				"Telophase"
+			],
+			"answer": "Metaphase"
+		},
+		{
+			"question": "Raphides are the crystals of",
+			"options": [
+				"Calcium oxalate",
+				"Calcium",
+				"Calcium phosphate",
+				"alcium carbonate"
+			],
+			"answer": "Calcium oxalate"
+		},
+		{
+			"question": "The shade of a tree is cooler than the shade of a roof due to",
+			"options": [
+				"Transpiration",
+				"Guttation",
+				"Photosynthesis",
+				"Respiration"
+			],
+			"answer": "Transpiration"
+		},
+		{
+			"question": "Which of the following shows heterothallism",
+			"options": [
+				"Rhizopus",
+				"Cycas",
+				"Bacterium",
+				"Ricinus"
+			],
+			"answer": "Rhizopus"
+		},
+		{
+			"question": "Casparian strips are found in",
+			"options": [
+				"Endodermis",
+				"Hypodermis",
+				"Epidermis",
+				"Periderm"
+			],
+			"answer": "Endodermis"
+		},
+		{
+			"question": "The process through which the amount of DNA, RNA and protein can be known at a time is called",
+			"options": [
+				"Cellular fractioning",
+				"Phase contrast microscopy",
+				"Tissue culture",
+				"Autoradiography"
+			],
+			"answer": "Cellular fractioning"
+		},
+		{
+			"question": "The formation of multivalents at meiosis in diploid organism is due to",
+			"options": [
+				"Reciprocal translocation",
+				"Inversion",
+				"Delection",
+				"Monosomy"
+			],
+			"answer": "Reciprocal translocation"
+		},
+		{
+			"question": "The trees occurring in two stories is the characteristic feature of",
+			"options": [
+				"Temperate deciduous forest",
+				"Tropical savannah",
+				"Grassland",
+				"Coniferous forest"
+			],
+			"answer": "Temperate deciduous forest"
+		},
+		{
+			"question": "A mature ligule, having prominent basal portion, is called",
+			"options": [
+				"Glossopodium",
+				"Rhizhore",
+				"Trichome",
+				"None of these"
+			],
+			"answer": "Glossopodium"
+		},
+		{
+			"question": "Hormogonia are vegetative reproductive structure of",
+			"options": [
+				"Oscillatoria",
+				"Yeast",
+				"Ulothrix",
+				"Spirogyra"
+			],
+			"answer": "Oscillatoria"
+		},
+		{
+			"question": "Which division of fungi includes ‘club fungi’",
+			"options": [
+				"Basidiomycota",
+				"Deuteromycota",
+				"Ascomycota",
+				"Zygomycota"
+			],
+			"answer": "Basidiomycota"
+		},
+		{
+			"question": "The hypogeal germination is found in",
+			"options": [
+				"Maize",
+				"Bean",
+				"Rhizophora",
+				"Cucurbita"
+			],
+			"answer": "Maize"
+		}
+	]}

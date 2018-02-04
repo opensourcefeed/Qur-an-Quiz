@@ -1,4 +1,4 @@
-var questionCount = 2;
+var questionCount = 10;
 var currentIndex = 0;
 var questions = [];
 var score = 0;
@@ -26,15 +26,20 @@ $(function(argument) {
 	}
 
 
-	function shuffle(c) {
-		var o = new Array();
-		for (var i = 0; i < c.length; i++) {
-			var n = c[Math.floor(Math.random()*c.length)];
-			if( jQuery.inArray(n, o) > 0 ) --i;
-			else o.push(n);
-		}
-		return o;
-	}
+	/**
+	 * Randomize array element order in-place.
+	 * Using Durstenfeld shuffle algorithm.
+	 */
+	 function shuffle(array) {
+	 	for (var i = array.length - 1; i > 0; i--) {
+	 		var j = Math.floor(Math.random() * (i + 1));
+	 		var temp = array[i];
+	 		array[i] = array[j];
+	 		array[j] = temp;
+	 	}
+	 	return array;
+	 }
+
 
 	function showQuestion() {
 		var question = questions[currentIndex];
@@ -42,7 +47,7 @@ $(function(argument) {
 		$("#quiz").html("");
 		$("#quiz").append("<p class='progress'>Question {0} of {1}</p>".format(currentIndex + 1, questionCount));
 		$("#quiz").append("<p class='question'>{0}</p>".format(question.question));
-		$.each(question.options, function(index, option) {
+		$.each(shuffle(question.options), function(index, option) {
 			$("#quiz").append("<div class='option'>{0}</div>".format(option));
 		});
 		$("#quiz").show();
