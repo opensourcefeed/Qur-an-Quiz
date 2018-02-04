@@ -25,7 +25,7 @@
 
   
   <preference name="permissions"        value="none"/>
-  <preference name="BackgroundColor" value="0xffffff"/>
+  <preference name="BackgroundColor" value="white"/>
   <preference name="orientation"        value="portrait" />
   <preference name="target-device"        value="universal" />
   <preference name="fullscreen"         value="true" />
@@ -40,6 +40,7 @@
   <preference name="AutoHideSplashScreen" value="true" />
   <preference name="SplashShowOnlyFirstTime" value="false" />
   <preference name="FadeSplashScreen" value="false"/>
+  <preference name="SplashScreenBackgroundColor" value="white" />
 
 
   <!-- Define app icon for each platform. -->
