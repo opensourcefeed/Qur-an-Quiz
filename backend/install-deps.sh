@@ -1,0 +1,2 @@
+pip3 install flask_restful
+pip3 install flask_marshmallow
