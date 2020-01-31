@@ -5,6 +5,7 @@ pages:
   script:
     - mkdir .public
     - cp -r dist/* .public
+    - cp -r data/* .public
     - mv .public public
   artifacts:
     paths:

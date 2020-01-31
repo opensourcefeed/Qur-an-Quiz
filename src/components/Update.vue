@@ -67,7 +67,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .content {
-  margin-top: 3vh
+  margin-top: 3vh;
 }
 table {
   text-align: left;
@@ -76,6 +76,7 @@ table {
 td {
   background: white;
   padding: 1em;
+  border: 1px solid #eee;
 }
 #update {
   margin: 1em;

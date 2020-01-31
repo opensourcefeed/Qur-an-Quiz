@@ -9,25 +9,33 @@
           <img class="icon" src="../assets/meta/tv.svg">{{category.name}}
         </router-link>
       </div> -->
-      <img id="title-logo" src="/static/images/logo.jpg"/>
-      <div class="category">
-        <router-link :to="{name: 'Category'}">
-          <img class="icon" src="../../assets/meta/quiz.svg">
-          Film Quiz
-        </router-link>
-      </div>
-      <div class="category">
-        <a href="http://filmbiopsy.com">
-          <img class="icon" src="../../assets/meta/news.svg">
-          Film News
-        </a>
+      <img id="title-logo" src="../../static/images/logo.jpg"/>
+      <div class="group">
+        <div class="item">
+          <router-link :to="{name: 'Category'}">
+            <img src="../../assets/meta/quiz.svg"><br/>
+            Film Quiz
+          </router-link>
+        </div>
+        <div class="item">
+          <router-link :to="{name: 'ScoreBoard'}">
+            <img src="../../assets/meta/scoreboard.svg"><br/>
+            ScoreBoard
+          </router-link>
+        </div>
+        <div class="item">
+          <a href="http://filmbiopsy.com">
+            <img src="../../assets/meta/news.svg"><br/>
+            Film News
+          </a>
+        </div>
       </div>
       <hr>
-      <div class="category">
+      <!-- <div class="category">
         <router-link :to="{name: 'Update'}">
           <img class="icon" src="../../assets/meta/cloud.svg">Check for Update
         </router-link>
-      </div>
+      </div> -->
       <div class="category">
         <a @click="openRateDialog"><img class="icon" src="../../assets/meta/star.svg">Rate Us</a>
       </div>
@@ -91,5 +99,33 @@ hr {
 #title-logo {
   width: 128px;
   border-radius: 100%;
+}
+.group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .2em;
+  margin-top: 2vh;
+  margin: 16px;
+}
+.item {
+    background-color: var(--primary-color);
+    padding: .5em;
+    box-shadow: 1px 1px 1px #ddd;
+    position: relative;
+    height: 80px;
+    word-break: break-all;
+}
+.item a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .5em;
+}
+.item img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 84px;
+  width: 40px;
 }
 </style>

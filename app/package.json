@@ -1,8 +1,8 @@
 {
-  "name": "com.libreappfoundation.mobiletv",
-  "displayName": "MobileTV",
+  "name": "com.filmbiopsy.mobileapp",
+  "displayName": "FilmBiopsy",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "A hybrid app from Filmbiopsy, features Quiz, movie updates & more",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,37 +11,30 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova": "^9.0.0",
-    "cordova-admob-sdk": "^0.21.0",
-    "cordova-android": "^7.1.4",
-    "cordova-plugin-admob-free": "^0.24.0",
+    "cordova-android": "^8.1.0",
     "cordova-plugin-apprate": "^1.4.0",
     "cordova-plugin-buildinfo": "^2.0.2",
     "cordova-plugin-dialogs": "^2.0.1",
-    "cordova-plugin-fullscreen": "^1.2.0",
     "cordova-plugin-globalization": "^1.11.0",
     "cordova-plugin-inappbrowser": "^3.0.0",
-    "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
     "cordova-plugin-market": "^1.2.0",
     "cordova-plugin-nativestorage": "^2.3.2",
-    "cordova-plugin-screen-orientation": "^3.0.1",
     "cordova-plugin-splashscreen": "^5.0.2",
-    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-plugin-whitelist": "^1.3.4",
     "cordova-promise-polyfill": "0.0.2",
     "es6-promise-plugin": "^4.2.2"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {},
-      "cordova-plugin-screen-orientation": {},
-      "cordova-plugin-insomnia": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-admob-free": {
-        "ADMOB_APP_ID": "ca-app-pub-6380671811722843~2199965818"
-      },
-      "cordova-plugin-fullscreen": {},
       "cordova-plugin-apprate": {},
       "cordova-plugin-buildinfo": {},
-      "cordova-plugin-market": {}
+      "cordova-plugin-market": {},
+      "cordova-promise-polyfill": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-admob-free": {
+        "ADMOB_APP_ID": "ca-app-pub-7405511998154146~9468235608"
+      }
     },
     "platforms": [
       "android"

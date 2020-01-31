@@ -25,4 +25,5 @@ $ weinre --boundHost 192.168.1.70 --httpPort 8080
 5. Open debug console in browser using IP and Port number given with weinre
 
 # Points to Ponder
-- cordova-promose-polyfill plugin may be required for making AJAX calls
+- cordova-promise-polyfill plugin may be required for making AJAX calls
+- In case of any issues, rely on USB debugging with debug-mode build

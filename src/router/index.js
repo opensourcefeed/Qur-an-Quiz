@@ -6,6 +6,7 @@ import Question from '@/components/Question'
 import Update from '@/components/Update'
 import Result from '@/components/Result'
 import Page from '@/components/Page'
+import ScoreBoard from '@/components/ScoreBoard'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/page',
       name: 'Page',
       component: Page
+    },
+    {
+      path: '/scoreboard',
+      name: 'ScoreBoard',
+      component: ScoreBoard
     }
   ]
 })

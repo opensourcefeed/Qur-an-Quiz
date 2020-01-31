@@ -3,7 +3,7 @@ export function initializeRating () {
     /* eslint no-undef: ["error", { "typeof": true }] */
     AppRate.preferences = {
       storeAppURL: {
-        android: 'market://details?id=com.libreappfoundation.mobiletv'
+        android: 'market://details?id=com.filmbiopsy.mobileapp'
       },
       callbacks: {
         onButtonClicked: function (buttonIndex) {

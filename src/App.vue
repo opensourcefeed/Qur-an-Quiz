@@ -8,15 +8,16 @@
 // import axios from 'axios'
 // import json from './assets/data/data.json'
 import {initializeRating} from './mixins/rating.js'
-// window.log = ''
-// if (!console._log_old) {
-//   console._log_old = console.log
-//   console.log = function (msg) {
-//     console._log_old(msg)
-//     window.log += Date() + ' ' + msg + '<br>'
-//   }
-//   console.error = console.log
-// }
+
+window.log = ''
+if (!console._log_old) {
+  console._log_old = console.log
+  console.log = function (msg) {
+    console._log_old(msg)
+    window.log += Date() + ' ' + msg + '<br>'
+  }
+  console.error = console.log
+}
 
 export default {
   name: 'App',
@@ -34,14 +35,17 @@ export default {
       /* eslint no-undef: ["error", { "typeof": true }] */
       if (typeof admob !== 'undefined') {
         setTimeout(function () {
+          console.log('initializing ad mob')
           admob.banner.config({
-            id: 'ca-app-pub-6380671811722843/7999087406',
-            isTesting: false,
-            autoShow: true
+            id: 'ca-app-pub-7405511998154146/1589745583',
+            isTesting: false
           })
           admob.banner.prepare()
           admob.banner.show()
+          console.log('initialized admob')
         }, 500)
+      } else {
+        console.log('admob is undefined')
       }
 
       initializeRating()
@@ -50,7 +54,7 @@ export default {
 
       console.log(JSON.stringify(window.plugins))
 
-      console.log(JSON.strigify(window.cordova.plugins))
+      console.log(JSON.stringify(window.cordova.plugins))
     },
     onBackKeyDown: function (e) {
       e.preventDefault()
