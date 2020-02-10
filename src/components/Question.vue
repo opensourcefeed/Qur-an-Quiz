@@ -6,7 +6,7 @@
       </h2>
     </div>
 
-    <div v-if="question" id="quiz" >
+    <div v-if="question && loaded" id="quiz" >
       <p class="progress">Question {{questionNum}} of {{questions.length}}</p>
       <p class="question">{{question.question}}</p>
       <div class="option btn" :class="{correct: selectedAnswer === option && option == question.answer, incorrect: selectedAnswer === option && option !== question.answer}" @click="markAnswer(option)" v-bind:key="index" v-for="(option, index) of question.options">{{option}}</div>
@@ -20,6 +20,13 @@
       </div>
 
     </div>
+    <div class="loading" v-else-if="error">
+      <p>Could not load questions, please check your network.</p>
+    </div>
+    <div class="loading" v-else>
+      <img src="../../assets/meta/loading.gif">
+    </div>
+
     <!-- <div class="video-responsive">
       <div v-if="error">
         {{error.message}}<br/><br/>
@@ -47,7 +54,9 @@ export default {
   data: function () {
     return {
       selected: false,
-      selectedAnswer: ''
+      selectedAnswer: '',
+      loaded: false,
+      error: false
     }
   },
   methods: {
@@ -64,25 +73,23 @@ export default {
     },
     loadData: function () {
       let _self = this
-      try {
-        axios.get(`/static/data/${this.topicId}.json`)
-          .then((data) => {
-            data = data.data
-            console.log(data)
-            _self.$store.commit('setData', data)
-            let questions = CommonUtils.shuffle(data.questions)
-            for (let question of questions) {
-              question.options = CommonUtils.shuffle(question.options)
-            }
-            let questionCount = questions.length > Constants.QUESTION_COUNT ? Constants.QUESTION_COUNT : questions.length
-            data.questions = questions.splice(0, questionCount)
-            console.log('hi')
-            data.score = 0
-            console.log(data)
-          })
-      } catch (e) {
-        console.log(e)
-      }
+      axios.get(`${Constants.REMOTE_DATA}${this.topicId}.json`)
+        .then((data) => {
+          data = data.data
+          console.log(data)
+          _self.$store.commit('setData', data)
+          let questions = CommonUtils.shuffle(data.questions)
+          for (let question of questions) {
+            question.options = CommonUtils.shuffle(question.options)
+          }
+          let questionCount = questions.length > Constants.QUESTION_COUNT ? Constants.QUESTION_COUNT : questions.length
+          data.questions = questions.splice(0, questionCount)
+          data.score = 0
+          _self.loaded = true
+        })
+        .catch(function (e) {
+          _self.error = true
+        })
     }
   },
   computed: {

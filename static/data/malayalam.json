@@ -1,0 +1,55 @@
+{
+  "questions": [
+    {
+      "answer": "Padayottam",
+      "question": "First 70mm film in Malayalam.",
+      "options": [
+        "Thacholi Ambu",
+        "Padayottam",
+        "My Dear Kuttichathan",
+        "Kireedam"
+      ]
+    },
+    {
+      "answer": "GrandMaster",
+      "question": "First Malayalam movie to release in Netflix",
+      "options": [
+        "Pulimurugan",
+        "MadhuraRaja",
+        "GrandMaster",
+        "Pazhasshi Raja"
+      ]
+    },
+    {
+      "answer": "Koodevide",
+      "question": "In which movie does Mammootty's character kills Rahman , because of the latter getting too much attention from Mammootty's character girlfriend?",
+      "options": [
+        "Koodevide",
+        "Chilambu",
+        "Mazhavilkoodaram",
+        "Thammil Thammil"
+      ]
+    },
+    {
+      "answer": "Thalasthanam",
+      "question": "Which movie marks the stepping stone for superstardom of Suresh Gopi?",
+      "options": [
+        "Commissioner",
+        "Lelam",
+        "Mafia",
+        "Thalasthanam"
+      ]
+    },
+    {
+      "answer": "News",
+      "question": "Which is the debut movie of director Shaji Kailas?",
+      "options": [
+        "News",
+        "Kilukkampetti",
+        "Dr. Pashupathi",
+        "Souhrudam"
+      ]
+    }
+  ],
+  "title": "Malayalam"
+}

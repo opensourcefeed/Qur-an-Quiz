@@ -16,13 +16,23 @@
 <script>
 
 import topics from '../../static/data/topics.json'
+import Constants from '../constants/Constants.js'
 
 export default {
   name: 'Category',
-  computed: {
-    topics () {
-      return topics
+  data: function () {
+    return {
+      topics: []
     }
+  },
+  mounted: function () {
+    this.topics = topics
+    let _self = this
+    fetch(`${Constants.REMOTE_DATA}topics.json`)
+      .then(data => data.json())
+      .then((data) => {
+        _self.topics = data
+      })
   }
 }
 </script>

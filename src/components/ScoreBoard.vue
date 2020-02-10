@@ -27,10 +27,6 @@
       <table class="info">
         <tr>
           <td>Rank: {{myRecord.rank}}</td>
-          <td>Total Score: {{myRecord.total_score}}</td>
-        </tr>
-        <tr>
-          <td></td>
           <td>Best Score: {{myRecord.highest_score}}</td>
         </tr>
       </table>
@@ -107,14 +103,14 @@ thead td {
   font-weight: bold
 }
 .card {
-  background: #F4B400;
+  background: var(--primary-color);
   padding-top: 1rem
 }
 .card td{
   background: none;
   border: 1px solid rgba(255, 255, 255, .2);
   width: 50%;
-
+  font-size: 1rem;
 }
 .card td+td {
   text-align: left
@@ -123,8 +119,5 @@ thead td {
   font-weight: bold;
   font-size: 24px;
   color: white;
-}
-.loading {
-  padding-top: 20%
 }
 </style>
