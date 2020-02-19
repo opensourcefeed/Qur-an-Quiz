@@ -19,9 +19,7 @@
         </tbody>
       </table>
     </div>
-    <div class="loading" v-else>
-      <img src="../../assets/meta/loading.gif">
-    </div>
+    <Spinner v-else />
     <div class="card" v-if="myRecord">
       <div class="name">{{myRecord.name}}</div>
       <table class="info">
@@ -36,6 +34,7 @@
 
 <script>
 import Constants from '../constants/Constants.js'
+import Spinner from './Spinner'
 
 export default {
   name: 'ScoreBoard',
@@ -45,6 +44,9 @@ export default {
       myRecord: false,
       loaded: false
     }
+  },
+  components: {
+    Spinner
   },
   methods: {
     fetchRecords: function () {

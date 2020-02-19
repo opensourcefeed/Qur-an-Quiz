@@ -7,7 +7,10 @@
     </div>
 
     <div v-if="question && loaded" id="quiz" >
-      <p class="progress">Question {{questionNum}} of {{questions.length}}</p>
+      <div class="info">
+        <p class="progress">Question {{questionNum}} of {{questions.length}}</p>
+        <p class="timer">Remaining time {{remainingTime}}</p>
+      </div>
       <p class="question">{{question.question}}</p>
       <div class="option btn" :class="{correct: selectedAnswer === option && option == question.answer, incorrect: selectedAnswer === option && option !== question.answer}" @click="markAnswer(option)" v-bind:key="index" v-for="(option, index) of question.options">{{option}}</div>
       <div v-if="selected">
@@ -23,9 +26,7 @@
     <div class="loading" v-else-if="error">
       <p>Could not load questions, please check your network.</p>
     </div>
-    <div class="loading" v-else>
-      <img src="../../assets/meta/loading.gif">
-    </div>
+    <Spinner v-else />
 
     <!-- <div class="video-responsive">
       <div v-if="error">
@@ -48,15 +49,20 @@
 import axios from 'axios'
 import CommonUtils from '../mixins/CommonUtils.js'
 import Constants from '../constants/Constants.js'
+import Spinner from './Spinner'
 
 export default {
   name: 'question',
+  components: {
+    Spinner
+  },
   data: function () {
     return {
       selected: false,
       selectedAnswer: '',
       loaded: false,
-      error: false
+      error: false,
+      remainingTime: Constants.TIMEOUT
     }
   },
   methods: {
@@ -70,6 +76,18 @@ export default {
         this.$store.state.data.score += 1
       }
       console.log('score ' + this.$store.state.data.score)
+    },
+    updateTimer: function () {
+      console.log(this)
+      this.remainingTime -= 1
+      if (this.remainingTime === 0) {
+        if (this.questionNum < this.questions.length) {
+          this.$router.push({name: 'Question', params: {category: this.topicId, number: Number(this.questionNum) + 1}})
+        } else {
+          this.$router.push({name: 'Result'})
+        }
+      }
+      this.timer = setTimeout(this.updateTimer, 1000)
     },
     loadData: function () {
       let _self = this
@@ -86,6 +104,7 @@ export default {
           data.questions = questions.splice(0, questionCount)
           data.score = 0
           _self.loaded = true
+          _self.updateTimer()
         })
         .catch(function (e) {
           _self.error = true
@@ -110,12 +129,25 @@ export default {
     }
   },
   mounted: function () {
+    console.log('inside mounter...')
+    // this.updateTimer()
     this.loadData()
+  },
+  beforeDestroy: function () {
+    console.log('clearing timeout')
+    clearTimeout(this.timer)
+  },
+  beforeRouteLeave: function (from, to, next) {
+    console.log('leaving route', from, to)
+    next()
   },
   watch: {
     'questionNum': function () {
       this.selected = false
       this.selectedAnswer = ''
+      clearTimeout(this.timer)
+      this.remainingTime = Constants.TIMEOUT
+      this.updateTimer()
       console.log('questionNum changed')
       if (this.questionNum === 1 || !this.$store.state.data.questions) {
         this.loadData()
@@ -133,10 +165,22 @@ h2 {
 #quiz {
   background: white;
 }
-.progress {
-  text-align: left;
+.info {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem
+}
+.progress, .timer {
   margin-bottom: 0px;
   padding: 0 10px;
+  flex: 50%;
+}
+.progress {
+  text-align: left;
+}
+.timer {
+  text-align: right;
 }
 .question {
   text-align: left;

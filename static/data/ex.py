@@ -5,11 +5,11 @@ with open("meta.txt") as df:
 
 questions = []
 content = {}
-content["title"] = "Malayalam"
+content["title"] = "Hollywood-2"
 
 lines = [line.strip() for line in lines]
-
-for i in range(len(lines) / 5):
+print(len(lines))
+for i in range(int(len(lines) / 5)):
     print(i)
     question = {}
     question["question"] = lines[i * 5]
@@ -19,4 +19,4 @@ for i in range(len(lines) / 5):
  
 content["questions"] = questions
 
-json.dump(content, open("malayalam.json", "w"))
+json.dump(content, open("hollywood-2.json", "w"))

@@ -173,7 +173,4 @@ body {
   margin: auto;
   margin: 10px;
 }
-.loading {
-  padding-top: 20%
-}
 </style>

@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Menu from '@/components/Menu'
 import Category from '@/components/Category'
 import Question from '@/components/Question'
-import Update from '@/components/Update'
 import Result from '@/components/Result'
 import Page from '@/components/Page'
 import ScoreBoard from '@/components/ScoreBoard'
@@ -31,11 +30,6 @@ export default new Router({
       path: '/quiz/result',
       name: 'Result',
       component: Result
-    },
-    {
-      path: '/update',
-      name: 'Update',
-      component: Update
     },
     {
       path: '/page',

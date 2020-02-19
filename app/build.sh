@@ -11,6 +11,7 @@ cp -r ../dist/* www/
 rm www/static/css/*.map
 rm www/static/js/*.map
 rm -rf www/static/images
+rm -rf www/static/data
 
 # Replace
 sed -i 's/\/static/.\/static/g' www/index.html
@@ -18,9 +19,8 @@ sed -i 's/\/static/.\/static/g' www/static/js/app*.js
 
 export ANDROID_HOME=/home/niyasc/Development
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-export PATH=$PATH:/home/niyasc/Apps/gradle-6.1.1/bin
+export PATH=$PATH:/home/niyasc/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/bin
 export PATH=$PATH:/home/niyasc/Development/tools
-export PATH=$PATH:/home/niyasc/Development/platform-tools
 trap interrupted INT
 function interrupted () {
     rm -f platforms/android/release.properties
