@@ -6,6 +6,9 @@ import Question from '@/components/Question'
 import Result from '@/components/Result'
 import Page from '@/components/Page'
 import ScoreBoard from '@/components/ScoreBoard'
+import Login from '@/components/Login'
+import Register from '@/components/Register'
+import Welcome from '@/components/Welcome'
 
 Vue.use(Router)
 
@@ -13,8 +16,23 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Welcome',
+      component: Welcome
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/menu',
       name: 'Menu',
       component: Menu
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
     },
     {
       path: '/quiz/category',

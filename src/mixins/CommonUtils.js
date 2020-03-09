@@ -1,3 +1,5 @@
+import Constants from '../constants/Constants'
+
 export default {
   shuffle (array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -10,5 +12,11 @@ export default {
   },
   userId () {
     return '_' + Math.random().toString(36).substr(2, 9)
+  },
+  setUser (user) {
+    window.localStorage.setItem(`${Constants.APP_STORAGE_KEY}-user`, JSON.stringify(user))
+  },
+  getUser () {
+    return JSON.parse(window.localStorage.getItem(`${Constants.APP_STORAGE_KEY}-user`))
   }
 }

@@ -35,6 +35,7 @@
 <script>
 import Constants from '../constants/Constants.js'
 import Spinner from './Spinner'
+import CommonUtils from '../mixins/CommonUtils.js'
 
 export default {
   name: 'ScoreBoard',
@@ -51,7 +52,7 @@ export default {
   methods: {
     fetchRecords: function () {
       let _self = this
-      fetch(`${Constants.REMOTE}scores`, {mode: 'cors'})
+      fetch(`${Constants.REMOTE}scoreboard`, {mode: 'cors'})
         .then(response => response.json())
         .then(data => {
           _self.records = data
@@ -64,7 +65,7 @@ export default {
     fetchMyRecord: function () {
       let _self = this
       if (this.id) {
-        fetch(`${Constants.REMOTE}scores/${this.id}`, {mode: 'cors'})
+        fetch(`${Constants.REMOTE}user/${this.id}`, {mode: 'cors'})
           .then(response => response.json())
           .then(function (data) {
             _self.myRecord = data
@@ -81,7 +82,7 @@ export default {
   },
   computed: {
     id: function () {
-      return window.localStorage.getItem(`${Constants.APP_STORAGE_KEY}-id`)
+      return CommonUtils.getUser().id
     }
   }
 }

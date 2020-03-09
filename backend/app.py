@@ -1,110 +1,190 @@
-from flask import Flask, request
-from flask_sqlalchemy import SQLAlchemy # new
-from flask_marshmallow import Marshmallow # new
+#!flask/bin/python
+from flask import Flask, jsonify
+from flask import request
+from flask import abort
 from flask_cors import CORS
-from flask_restful import Api, Resource
+
+import sqlite3
+from sqlite3 import Error, IntegrityError
+
+import json
+from collections import namedtuple
+
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///score.db' # new
 app.config['CORS_HEADERS'] = 'Content-Type'
 CORS(app, resources={r"/*": {"origins": "*"}})
-db = SQLAlchemy(app) # new
-ma = Marshmallow(app) # new
-api = Api(app)
 
-# Define a class for the Artist table
-class Score(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	name = db.Column(db.String)
-	highest_score = db.Column(db.Integer)
-	last_update = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
-	total_score = db.Column(db.Integer)
-	attempt_count = db.Column(db.Integer);
+db_file = "mobile-app"
 
-	def __eq__(self, other):
-		return self.id == other.id
-	
+def create_connection():
+    conn = None
+    try:
+        conn = sqlite3.connect(db_file)
+    except Error as e:
+        print(e)
 
-# Create data abstraction layer
-class ScoreSchema(ma.Schema):
-	class Meta:
-		fields = ("id", "name", "highest_score", "last_update", "total_score", "attempt_count")
+    return conn
+
+def create_tables():
+    conn = create_connection ()
+    sql = 'CREATE TABLE IF NOT EXISTS USER(id INTEGER PRIMARY KEY AUTOINCREMENT, name varchar, phone varchar unique, email varchar unique, password varchar)'
+    cur = conn.cursor()
+    cur.execute(sql)
+    sql = 'CREATE TABLE IF NOT EXISTS SCORE(id INTEGER PRIMARY KEY AUTOINCREMENT, highest_score int default 0, attempts int default 0, attempts_remaining int default 0, user_id int, last_update DATETIME DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY(user_id) references USER(id))'
+    cur.execute(sql)
+
+create_tables()
 
 
-score_schema = ScoreSchema()
-scores_schema = ScoreSchema(many=True)
+def add_user(conn, user):
+    try:
+        sql = ''' INSERT INTO USER(name,email,phone,password)
+                  VALUES(?,?,?, ?) '''
+        cur = conn.cursor()
+        cur.execute(sql, (user.name, user.email, user.phone, user.password))
+        user_id = cur.lastrowid
+        print (user_id)
+        score = (user_id,)
+        sql = '''INSERT INTO SCORE(user_id) VALUES(?)'''
+        cur = conn.cursor()
+        cur.execute(sql, score)
+        return {
+            "status": "success",
+            "user": get_record(conn, user_id)
+        }
+    except IntegrityError as e:
+        return {
+            "status": "error",
+            "reason": str(e)
+        }
 
-class ScoreListResource(Resource):
-	def get(self):
-		scores = Score.query.filter(Score.highest_score != None).order_by(Score.highest_score.desc()).limit(5)
-		scores = scores_schema.dump(scores)
-		return scores
+def record_to_dict(record):
+    return {
+        "id": record[0],
+        "name": record[1],
+        "phone": record[2],
+        "email": record[3],
+        "highest_score": record[6],
+        "attempts": record[7],
+        "attempts_remaining": record[8],
+        "last_update": record[10]
+    }
 
-	def post(self):
-		score_id = None
-		score = None
-		print(request.json)
-		if 'id' in request.json: 
-			print('inside if')
-			score_id = request.json['id']
-		else:
-			print('inside else')
-		current_score = int(request.json['score'])
-		name = request.json['name'];
+def login_user(conn, loginVo):
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM USER u, SCORE s WHERE u.id = s.user_id and (u.email = ? or u.phone = ?) and u.password = ?", (loginVo.userId, loginVo.userId, loginVo.password, ))
+    user = cur.fetchone()
+    if user:
+        return {
+            "status": "success",
+            "user": record_to_dict(user)
+        }
+    else:
+        return {
+            "status": "error",
+            "reason": "Invalid user name or password"
+        }
 
-		print('score_id', score_id)
+def get_record(conn, id):
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM USER u, SCORE s WHERE u.id = s.user_id and u.id = ?", (id,))
+    return record_to_dict(cur.fetchone())
 
-		if score_id:
-			try:
-				score = Score.query.get_or_404(score_id)
-			except e:
-				print(e)
+def get_all_records(conn):
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM USER u, SCORE s WHERE u.id = s.user_id")
+ 
+    rows = cur.fetchall()
+    
+    records = []
 
-		if score:
-			new_entry = score
-			new_entry.name = name
-			if new_entry.highest_score < current_score:
-				new_entry.highest_score = current_score
-			if new_entry.total_score == None:
-				new_entry.total_score = current_score
-			else:
-				new_entry.total_score += current_score
+    for row in rows:
+        records.append(record_to_dict(row))
 
-			if new_entry.attempt_count == None:
-				new_entry.attempt_count = 1
-			else:
-				new_entry.attempt_count += 1
-		else:
-			new_entry = Score(
-				name=request.json['name'],
-				highest_score=request.json['score'],
-				last_update=db.func.now(),
-				total_score = current_score,
-				attempt_count = 1
-			)
-			db.session.add(new_entry)
-		db.session.commit()
-		return score_schema.dump(new_entry)
-'''
-'''
-class ScoreResource(Resource):
-	def get(self, score_id):
-		score = Score.query.get_or_404(score_id)
-		score = score_schema.dump(score)
-		scores = Score.query.order_by(Score.highest_score.desc()).all()
-		scores = scores_schema.dump(scores)
-		score.data['rank'] = scores.data.index(score.data) + 1
-		print (score)
-		return score
+    return records
 
-api.add_resource(ScoreResource, '/scores/<int:score_id>')
-api.add_resource(ScoreListResource, '/scores')
+@app.route('/login', methods=['POST'])
+def login():
+    if not request.json:
+        abort(400)
+    loginVo = json_to_dict(request.json)
+    conn = create_connection()
+    with conn:
+        return login_user(conn, loginVo)
 
+@app.route('/register', methods=['POST'])
+def register():
+    if not request.json:
+        abort(400)
+    user = json_to_dict(request.json)
+    conn = create_connection ()
+    with conn:
+        return jsonify(add_user(conn, user))
+
+@app.route('/score/update', methods=['POST'])
+def update_user_score():
+    if not request.json:
+        abort(400)
+    user = json_to_dict(request.json)
+    conn = create_connection ()
+    with conn:
+        return jsonify(update_score(conn, user))
+
+@app.route('/user/<id>')
+def get_user_record(id):
+    conn = create_connection()
+    with conn:
+        record = get_record(conn, id)
+        record['rank'] = get_rank(conn, id)
+        return jsonify(record)
+
+@app.route('/list', methods=['GET'])
+def list():
+    conn = create_connection()
+    with conn:
+        return jsonify(get_all_records(conn))
+
+@app.route('/scoreboard', methods=['GET'])
+def score_board():
+    conn = create_connection()
+    with conn:
+        return jsonify(create_score_board(conn))
+
+def create_score_board(conn):
+    cur = conn.cursor()
+    cur.execute('SELECT * FROM USER u, SCORE s WHERE u.id = s.user_id ORDER BY s.highest_score DESC, s.attempts ASC LIMIT 10')
+    records = []
+    rank = 1
+    for row in cur.fetchall():
+        record = record_to_dict(row)
+        record['rank'] = rank
+        rank += 1
+        records.append(record)
+
+    return records
+
+def get_rank(conn, id):
+    cur = conn.cursor()
+    cur.execute('SELECT * FROM SCORE ORDER BY highest_score DESC, attempts ASC')
+    rank = 1
+    for row in cur.fetchall():
+        if str(row[4]) == id:
+            return rank
+        rank += 1
+
+def update_score(conn, score):
+    cur = conn.cursor()
+    cur.execute('UPDATE SCORE SET highest_score = (CASE WHEN highest_score < ? THEN ? ELSE highest_score END), attempts = attempts + 1 WHERE user_id=?',
+        (score.highest_score, score.highest_score, score.id))
+    return get_record(conn, score.id)
+
+
+def json_to_dict(data):
+    return json.loads(
+        json.dumps(data), 
+        object_hook=lambda d: namedtuple('X', d.keys())(*d.values())
+    )
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0')
-
-# Create the table. Only once. Comment after that.
-db.create_all()
-
-

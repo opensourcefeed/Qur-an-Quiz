@@ -34,7 +34,7 @@ export default {
       let _self = this
       if (this.id) {
         console.log('inside if')
-        fetch(`${Constants.REMOTE}scores/${this.id}`, {mode: 'cors'})
+        fetch(`${Constants.REMOTE}user/${this.id}`, {mode: 'cors'})
           .then(response => response.json())
           .then(function (data) {
             _self.name = data.name
@@ -50,12 +50,11 @@ export default {
     saveScore () {
       let data = {}
       let _self = this
-      data.name = this.name
-      data.score = this.score ? this.score : 0
+      data.highest_score = this.score ? this.score : 0
       if (this.id) {
         data.id = this.id
       }
-      fetch(`${Constants.REMOTE}scores`, {
+      fetch(`${Constants.REMOTE}score/update`, {
         body: JSON.stringify(data),
         method: 'POST',
         headers: {
@@ -66,8 +65,7 @@ export default {
       })
         .then(response => response.json())
         .then(function (data) {
-          console.log(data)
-          window.localStorage.setItem(`${Constants.APP_STORAGE_KEY}-id`, data.id)
+          CommonUtils.setUser(data)
           _self.$router.push('/')
         })
         .catch((error) => {
@@ -87,7 +85,7 @@ export default {
       return this.$store.state.data.questions ? this.$store.state.data.questions.length : ''
     },
     id: function () {
-      return window.localStorage.getItem(`${Constants.APP_STORAGE_KEY}-id`)
+      return CommonUtils.getUser().id
     }
   },
   watch: {

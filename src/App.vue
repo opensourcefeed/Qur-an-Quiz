@@ -173,4 +173,21 @@ body {
   margin: auto;
   margin: 10px;
 }
+form a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: underline
+}
+input {
+  height: 2rem;
+  padding: .1rem;
+  font-size: 1.2rem;
+  border: 1px solid #e3be92
+}
+.error {
+  background: #bb0000;
+  padding: 1rem;
+  color: white;
+  border: 1px solid black;
+}
 </style>

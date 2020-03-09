@@ -40,6 +40,8 @@ EOT
 
 export ORG_GRADLE_PROJECT_cdvReleaseSigningPropertiesFile=../release.properties 
 cordova build --release android
+#debug build
+# cordova build android
 rm platforms/android/release.properties
 
 echo "Build completed, trying to kill java daeomon"
