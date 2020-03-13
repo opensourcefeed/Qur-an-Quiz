@@ -1,6 +1,16 @@
 {
   "questions": [
     {
+      "answer": "Rashomon effect",
+      "question": "What kind of story telling effect is used in the movie Mamangam?",
+      "options": [
+        "Blind Man and the elephant",
+        "Nonlinear story telling",
+        "Rashomon effect",
+        "Neo-Noir"
+      ]
+    },
+    {
       "answer": "Padayottam",
       "question": "First 70mm film in Malayalam.",
       "options": [

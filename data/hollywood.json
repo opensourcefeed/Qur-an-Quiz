@@ -199,6 +199,86 @@
         "Sabu Dastagir"
       ],
       "answer": "Sabu Dastagir"
+    },
+    {
+      "answer": "The Manchurian Candidate",
+      "question": "In which movie you will see that uses the technique of psychological brainwashing of Cold War Russia and China?",
+      "options": [
+        "The Manchurian Candidate",
+        "The First Blood",
+        "Casualties of War",
+        "The Platoon"
+      ]
+    },
+    {
+      "answer": "Midnight in Paris, Woody Allen",
+      "question": "Owen Wilson plays the character Gil in the movie based out in Paris, in which he longs to go to the golden age of Paris back in the past which brings him new experiences. Name the movie and it’s director?",
+      "options": [
+        "Marley and Me, David Frankel",
+        "Amelie, Jean-Pierre Jeunet",
+        "Midnight in Paris, Woody Allen",
+        "Paris I love you, Several directors"
+      ]
+    },
+    {
+      "answer": "American Psycho",
+      "question": "Which of the following movies is not directed by Coen brothers?",
+      "options": [
+        "Miller’s Crossing",
+        "American Psycho",
+        "Fargo",
+        "No Country for Old Men"
+      ]
+    },
+    {
+      "answer": "Steven Spielberg",
+      "question": "Which director directed the first four Indiana Jones movies?",
+      "options": [
+        "James Mangold",
+        "Michael Mann",
+        "Steven Spielberg",
+        "George Lucas"
+      ]
+    },
+    {
+      "answer": "Quentin Tarantino",
+      "question": "Who played the role of Mr Orange in the movie Reservoir Dogs?",
+      "options": [
+        "Harvey Kietal",
+        "Woody Harlensen",
+        "Quentin Tarantino",
+        "Michael Madsen"
+      ]
+    },
+    {
+      "answer": "Daniel Day Lewis",
+      "question": "Who played the role of The Butcher in the movie The Gangs of New York?",
+      "options": [
+        "Leonardo DiCaprio",
+        "Robert Di Niro",
+        "Daniel Day Lewis",
+        "Liam Neeson"
+      ]
+    },
+    {
+      "answer": "Life Lessons",
+      "question": "In the movie New York Stories which consists of three parts directed by different directors. Name the part directed by Martin Scorsese?",
+      "options": [
+        "Life with Zoe",
+        "Oedipus Wreaks",
+        "Life Lessons",
+        "After Hours"
+      ]
+    },
+    {
+      "answer": "Robert Duvall",
+      "question": "Who played the role of The Consigliere in The Godfather 1?",
+      "options": [
+        "Robert Duvall",
+        "Brian De Palma",
+        "Oliver Stone",
+        "Robert Di Niro"
+      ]
     }
   ],
   "title": "Hollywood"
