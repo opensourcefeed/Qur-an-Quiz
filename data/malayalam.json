@@ -59,7 +59,197 @@
         "Dr. Pashupathi",
         "Souhrudam"
       ]
+    },
+    {
+      "answer": "Lucifer",
+      "question": "Which among these movies are not Industrial hit in Mollywood?",
+      "options": [
+        "Hitler",
+        "Drishyam",
+        "Lucifer",
+        "Rajamanikyam"
+      ]
+    },
+    {
+      "answer": "Mammootty",
+      "question": "Which Malayalam Actor has Number of National Awards as Best Actor?",
+      "options": [
+        "Sathyan",
+        "Mohanlal",
+        "Mammootty",
+        "Prem Nazir"
+      ]
+    },
+    {
+      "answer": "Rajamanikyam",
+      "question": "Which Malayalam movie made Theatrical gross of 20 Crores for first time ?",
+      "options": [
+        "Narasimham",
+        "Hello",
+        "Rajamanikyam",
+        "Classmates"
+      ]
+    },
+    {
+      "answer": "Drishyam",
+      "question": "Which is first 50 Crores movie in Mollywood?",
+      "options": [
+        "Pulimurugan",
+        "Pazhassiraja",
+        "Drishyam",
+        "Premam"
+      ]
+    },
+    {
+      "answer": "5",
+      "question": "How many Times did Adoor Gopalakrishnan won National award for Best Director?",
+      "options": [
+        "5",
+        "8",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "answer": "Teacher",
+      "question": "What was occupation of Sreenivasan (Vijayan) in Movie ChinthaVishtayay Shyamala?",
+      "options": [
+        "Preist",
+        "Don",
+        "Principal",
+        "Teacher"
+      ]
+    },
+    {
+      "answer": "2",
+      "question": "How many National Awards did Manichithrathaazhu won?",
+      "options": [
+        "8",
+        "6",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "answer": "Saamy",
+      "question": "In Johny Walker Movie, who made Chandini addicted to Drugs?",
+      "options": [
+        "Bobby Varghese",
+        "Didi",
+        "Johny Varghese",
+        "Saamy"
+      ]
+    },
+    {
+      "answer": "Rajan P Dev",
+      "question": "In Movie Sethurama Iyer CBI, Who enacted role of Bahuleyan?",
+      "options": [
+        "Rajan P Dev",
+        "Jagathy",
+        "Mukesh",
+        "Narendra Prasad"
+      ]
+    },
+    {
+      "answer": "Koothara",
+      "question": "Movie in which Mohanlal acted as a Mermaid?",
+      "options": [
+        "Uncle Bun",
+        "Appu",
+        "Koothara",
+        "Moonammura"
+      ]
+    },
+    {
+      "answer": "2",
+      "question": "How many times Mohanlal won National Award (Best Actor)?",
+      "options": [
+        "5",
+        "2",
+        "7",
+        "1"
+      ]
+    },
+    {
+      "answer": "Both Aadu & Aadu 2",
+      "question": "In which movie did Jayasuriya enacted role of Shaji Paappan ?",
+      "options": [
+        "Aadu",
+        "Anyeshanam",
+        "Aadu 2",
+        "Both Aadu & Aadu 2"
+      ]
+    },
+    {
+      "answer": "INSP",
+      "question": "In Sandhesham movie, what is name of Political party Jayaram work for?",
+      "options": [
+        "INC",
+        "KRD",
+        "INSP",
+        "BSP"
+      ]
+    },
+    {
+      "answer": "Chathutty",
+      "question": "What is character name of Innocent in movie \"Varavelpu\"?",
+      "options": [
+        "Dineshan",
+        "Chathutty",
+        "Simon",
+        "Kunjalikutty"
+      ]
+    },
+    {
+      "answer": "Nagamanikyam",
+      "question": "In movie \"Anandbhadram\" what does Digambaran hunt for?",
+      "options": [
+        "Ananthan",
+        "Bhadra",
+        "Nagamanikyam",
+        "Udavaal"
+      ]
+    },
+    {
+      "answer": "Seven Bells",
+      "question": "What is name of musical instrument mentioned in movie \"Devadoothan\"?",
+      "options": [
+        "Five Rings",
+        "Seven Bells",
+        "Flute of Life",
+        "SapthaSwaram"
+      ]
+    },
+    {
+      "answer": "Telephone Uncle",
+      "question": "What is name of Mohanlal in movie \"OnnuMuthalPoojyamVare\"?",
+      "options": [
+        "Bhooth Uncle",
+        "Manu Uncle",
+        "Telephone Uncle",
+        "IceCream Uncle"
+      ]
+    },
+    {
+      "answer": "Paasha",
+      "question": "In Movie \"Vettam\" What is name of character enacted by Jagathy Shreekumar?",
+      "options": [
+        "Raman Kartha",
+        "Hamza Koya",
+        "Felix",
+        "Paasha"
+      ]
+    },
+    {
+      "answer": "7",
+      "question": "How many Awards did movie \"Margam\" won in Kerala State Awards?",
+      "options": [
+        "3",
+        "7",
+        "9",
+        "2"
+      ]
     }
   ],
-  "title": "Malayalam"
+"title": "Malayalam"
 }
