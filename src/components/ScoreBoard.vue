@@ -79,6 +79,11 @@ export default {
   mounted: function () {
     this.fetchMyRecord()
     this.fetchRecords()
+    /* global admob */
+    /* eslint no-undef: ["error", { "typeof": true }] */
+    if (window.admob && CommonUtils.canShowAd()) {
+      admob.interstitial.show()
+    }
   },
   computed: {
     id: function () {

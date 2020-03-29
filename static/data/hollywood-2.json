@@ -1,1 +1,125 @@
-{"title": "Hollywood-2", "questions": [{"question": "Which among the 4 is the longest running movie franchise,as of now,according to the Guiness World records itself ?", "options": ["James Bond series", "Marvel Franchise", "Godzilla", "Star wars series"], "answer": ""}, {"question": "Which among these movies has spawned the most number of remakes?", "options": ["King Kong", "Seven Samurai", "Inavsion Of The Body Snatchers", "A Christmas Carol"], "answer": ""}, {"question": "Which of these  movies spawned a tv series as well?", "options": ["Twin Peaks", "Twilight Zone", "Mask", "Mission impossible"], "answer": ""}, {"question": "Which is the first popular movie to feature a surprise ending which overturns the entire film", "options": ["Citizen Kane", "The Cabinet of Dr Caligari", "Psycho", "Planet of the apes"], "answer": ""}, {"question": "Which of these movies have a plot twist ?", "options": ["Charade(1964)", "Sleuth", "Sixth Sense", "House of Games"], "answer": ""}, {"question": "Which among the following is not  remake of a Bollywood movie", "options": ["A Common Man (2013)", "Sheep without a Shepherd (2020)", "Delivery Man (2013)", "Fear (1996)"], "answer": ""}, {"question": "Who was the first actor to portray James Bond on screen?", "options": ["Barry Nelson", "Sean Connery", "Sir Roger Moore", "George Lazenby"], "answer": ""}, {"question": "Who among the following has played the most number of roles in a single movie?", "options": ["Kamal Hassan-Dashavataram", "James McAvoy-Split", "Johnson George-Aaranu Njan", "Eddie Murphy-The Nutty Professor"], "answer": ""}, {"question": "Which slasher series among these added a new angle to the genre  by introducing irony and making the movie meta(self \u2013referential) , in the 1990s?", "options": ["Nightmare on Elm street", "I know what you did last summer", "Scream", "Scary Movie"], "answer": ""}, {"question": "Who among the following is the first Indian actor to appear in  a Hollywood movie (significant role)?", "options": ["Shashi Kapoor", "Kabir Bedi", "Persis Khambatt", "Sabu Dastagir"], "answer": ""}]}
+{
+  "questions": [
+    {
+      "answer": "",
+      "question": "Who won Best Cinematographer Award in Kerala State Film Award 2004 for film Akale?",
+      "options": [
+        "S Kumar",
+        "Little Swayamp",
+        "Santhosh Shivan",
+        "Shaji N Karun"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which film didn't won National Awards for Best Film in Malayalam?",
+      "options": [
+        "Agnisakshi",
+        "Akale",
+        "Ore Kadal",
+        "Arike"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Who enacted the role of jnanasekhara varma in Movie tiger?",
+      "options": [
+        "Suresh Gopi",
+        "Siddique",
+        "Rajmohan Unnithan",
+        "Murali"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which was the highest grossing Malayalam movie in year 1994?",
+      "options": [
+        "Commissionar",
+        "Thenmavin Kombathu",
+        "Kadal",
+        "Vishnu"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which is first Malayalam movie to gross 1 Crore ?",
+      "options": [
+        "New Delhi",
+        "Aa Rathri",
+        "Kilukkam",
+        "Athiraathram"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Who enacted the role of Variyan Kunnathu Kunjahammed Haji in movie \"1921\"?",
+      "options": [
+        "A)Suresh Gopi",
+        "Janardhanan",
+        "Mammootty",
+        "TG Ravi"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Who directed the Revolt scenes in movie \"Rakthasaakshikal Sindabad\"?",
+      "options": [
+        "Fasil",
+        "Priyadarshan",
+        "Hariharan",
+        "Sibi Malayil"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "How many movies did Venu Nagavally worked as a Director?",
+      "options": [
+        "10",
+        "7",
+        "12",
+        "None of Above"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which is first Malayalam movie to gross 40 Crores ?",
+      "options": [
+        "Drishyam",
+        "Pazhassiraja",
+        "Classmates",
+        "Hello"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which is first Malayalam movie to get 1 Crore Share?",
+      "options": [
+        "Aa Rathri",
+        "New Delhi",
+        "Commissionar",
+        "Chithram"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which of below movie didn't do 100 Crore Total Business?",
+      "options": [
+        "Pulimurugan",
+        "Mamangam",
+        "Odiyan",
+        "Madhuraraja"
+      ]
+    },
+    {
+      "answer": "",
+      "question": "Which is first 50 Crores Grosser movie for Mammootty?",
+      "options": [
+        "Pazhassiraja",
+        "Rajamanikyam",
+        "Great Father",
+        "Mamangam"
+      ]
+    }
+  ],
+  "title": "Hollywood-2"
+}

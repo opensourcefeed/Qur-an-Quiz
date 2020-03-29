@@ -4,11 +4,6 @@
       <h2><a><img class="icon" src="../../assets/meta/back-disabled.svg"></a>Menu</h2>
     </div>
     <div class="categories">
-      <!-- <div class="category" v-bind:key="index" v-for="(category, index) in categories">
-        <router-link :to="{name: 'Category', params: {categoryId: index}}">
-          <img class="icon" src="../assets/meta/tv.svg">{{category.name}}
-        </router-link>
-      </div> -->
       <img id="title-logo" src="../../static/images/logo.jpg"/>
       <div class="group">
         <div class="item">
@@ -31,11 +26,6 @@
         </div>
       </div>
       <hr>
-      <!-- <div class="category">
-        <router-link :to="{name: 'Update'}">
-          <img class="icon" src="../../assets/meta/cloud.svg">Check for Update
-        </router-link>
-      </div> -->
       <div class="category">
         <a @click="openRateDialog"><img class="icon" src="../../assets/meta/star.svg">Rate Us</a>
       </div>
@@ -43,6 +33,10 @@
         <a @click="exitApp"><img class="icon" src="../../assets/meta/exit.svg">Exit</a>
       </div>
     </div>
+    <hr>
+    <router-link class="link" :to="{name: 'Page', params: {key: 'beta'}}">
+      BETA RELEASE NOTES
+    </router-link>
   </div>
 </template>
 
@@ -127,5 +121,9 @@ hr {
   max-width: 80%;
   max-height: 84px;
   width: 40px;
+}
+p {
+  border-top: 1px dashed #ddd;
+  padding-top: 1rem;
 }
 </style>

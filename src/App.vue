@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
+    <Updater @close="updateAvailable = false" :update="update" v-if="updateAvailable"/>
   </div>
 </template>
 
@@ -8,6 +9,9 @@
 // import axios from 'axios'
 // import json from './assets/data/data.json'
 import {initializeRating} from './mixins/rating.js'
+import Utils from './mixins/CommonUtils'
+import Constants from './constants/Constants'
+import Updater from './components/Updater'
 
 window.log = ''
 if (!console._log_old) {
@@ -21,6 +25,15 @@ if (!console._log_old) {
 
 export default {
   name: 'App',
+  components: {
+    Updater
+  },
+  data: function () {
+    return {
+      updateAvailable: false,
+      update: {}
+    }
+  },
   methods: {
     onDeviceReady: function () {
       console.log('device ready')
@@ -41,8 +54,18 @@ export default {
             isTesting: false
           })
           admob.banner.prepare()
-          admob.banner.show()
+
+          admob.interstitial.config({
+            id: 'ca-app-pub-7405511998154146/6431069769',
+            autoShow: false
+          })
+          admob.interstitial.prepare()
           console.log('initialized admob')
+
+          document.addEventListener('admob.interstitial.events.CLOSE', function (event) {
+            admob.interstitial.prepare()
+            Utils.setAdShown()
+          })
         }, 500)
       } else {
         console.log('admob is undefined')
@@ -77,17 +100,31 @@ export default {
   mounted () {
     // let localStorage = window.localStorage
     // let data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || json
-
+    let _self = this
     // this.$store.commit('setData', data)
 
-    // let _self = this
-    // Try to load remote data, save it on local
-    // axios.get('https://raw.githubusercontent.com/LibreAppFoundation/mobile-tv/master/src/assets/data/remote-2.json').then(function (response) {
-    //   _self.$store.commit('setData', response.data)
-    //   localStorage.setItem(STORAGE_KEY, JSON.stringify(response.data))
-    // }).catch(function (err) {
-    //   console.log(err)
-    // })
+    // Try to load meta data, save it on local
+    fetch(`${Constants.REMOTE_DATA}meta.json`)
+      .then(response => {
+        if (response.ok) {
+          return response.json()
+        } else {
+          throw new Error('Something went wrong')
+        }
+      })
+      .then((data) => {
+        // alert(`Latest Version: ${data.latestVersion}\
+        //   Installed Version: ${this.buildInfo.version}
+        //   Update Available: ${typeof this.buildInfo.version !== 'undefined' && data.latestVersion > this.buildInfo.version}`)
+        if (typeof this.buildInfo.version !== 'undefined' && data.latestVersion > this.buildInfo.version) {
+          _self.update.version = this.buildInfo.version
+          _self.update.latestVersion = data.latestVersion
+          _self.updateAvailable = true
+        }
+      })
+      .catch(error => {
+        window.alert(error)
+      })
 
     // load scripts
     let script = document.createElement('script')
@@ -95,6 +132,11 @@ export default {
     document.head.appendChild(script)
 
     document.addEventListener('deviceready', this.onDeviceReady)
+  },
+  computed: {
+    buildInfo: function () {
+      return window.BuildInfo ? window.BuildInfo : {}
+    }
   }
 }
 

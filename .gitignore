@@ -3,5 +3,5 @@ app/node_modules/
 app/platforms
 app/plugins
 app/www
-backend/.venv
+tutorial/env
 .public

@@ -50,7 +50,7 @@ export default new Router({
       component: Result
     },
     {
-      path: '/page',
+      path: '/page/:key',
       name: 'Page',
       component: Page
     },

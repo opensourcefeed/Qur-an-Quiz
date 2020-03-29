@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.filmbiopsy.mobileapp" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.filmbiopsy.mobileapp" version="1.2.4" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Filmbiopsy</name>
     <description>
         A hybrid app from Filmbiopsy, features Quiz, movie updates and more
@@ -21,9 +21,14 @@
         <icon density="xhdpi" src="res/mipmap-xhdpi/filmbiopsy.png" />
         <icon density="xxhdpi" src="res/mipmap-xxhdpi/filmbiopsy.png" />
         <icon density="xxxhdpi" src="res/mipmap-xxxhdpi/filmbiopsy.png" />
+        <resource-file src="res/splash-style.xml" target="/app/src/main/res/values/splash-style.xml" />
+        <resource-file src="res/splash.png" target="/app/src/main/res/drawable/splash.png" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
+        <activity android:theme="@style/SplashTheme" />
+    </edit-config>
     </platform>
     <splash src="res/splash.png" />
     <preference name="SplashMaintainAspectRatio" value="true" />

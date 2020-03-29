@@ -66,6 +66,11 @@ export default {
         .then(response => response.json())
         .then(function (data) {
           CommonUtils.setUser(data)
+          /* global admob */
+          /* eslint no-undef: ["error", { "typeof": true }] */
+          if (window.admob && CommonUtils.canShowAd()) {
+            admob.interstitial.show()
+          }
           _self.$router.push('/')
         })
         .catch((error) => {
