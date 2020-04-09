@@ -5,7 +5,9 @@
    <img id="title-logo" src="../../static/images/logo.jpg"/>
    <h1>Register</h1>
    <form autocomplete="off">
-    <div class="error" v-if="error">{{error}}</div>
+    <ul class="error" v-if="error.length">
+      <li v-for="(item, index) in error" :key="index">{{item}}</li>
+    </ul>
     <div>
       <label>
         <input type="text" v-model="user.name" placeholder="Name" tabindex="1" required />
@@ -64,60 +66,62 @@ export default {
         password: '',
         confirmPassword: ''
       },
-      error: '',
+      error: [],
       processing: false
     }
   },
   methods: {
     validate: function () {
+      this.error = []
       if (this.user.name === '') {
-        this.error = 'Name can\'t be empty'
+        this.error.push('Name can\'t be empty')
       } else if (this.user.email === '') {
-        this.error = 'Email can\'t be empty'
+        this.error.push('Email can\'t be empty')
       } else if (this.user.phone === '') {
-        this.error = 'Phone can\'t be empty'
+        this.error.push('Phone can\'t be empty')
       } else if (this.user.password === '') {
-        this.error = 'Password can\'t be empty'
+        this.error.push('Password can\'t be empty')
       } else if (this.user.password !== this.user.confirmPassword) {
-        this.error = 'Password and confirm password does n\'t match'
-      } else {
-        this.error = ''
+        this.error.push('Password and confirm password does n\'t match')
       }
     },
     register: function () {
       console.log(this.user)
       this.processing = true
+      console.log('validating')
       this.validate()
-      if (this.error) {
+      console.log('validated')
+      if (this.error.length) {
         this.processing = false
         return
       }
       delete this.user.confirmPassword
       let _self = this
 
-      fetch(`${Constants.REMOTE}register`, {
+      fetch(`${Constants.REMOTE}user/`, {
         body: JSON.stringify(this.user),
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        },
-        mode: 'cors'
+          'Content-Type': 'application/json'
+        }
       })
-        .then(response => response.json())
-        .then(function (data) {
-          console.log(data)
+        .then(async function (response) {
+          console.log(response)
+          let data = await response.json()
           // window.localStorage.setItem(`${Constants.APP_STORAGE_KEY}-id`, data.id)
-          if (data.status === 'success') {
-            CommonUtils.setUser(data.user)
+          if (response.status === 201) {
+            CommonUtils.setUser(data)
             _self.$router.push('/')
           } else {
-            _self.error = data.reason
+            console.log('else')
+            for (const property in data) {
+              _self.error.push(data[property][0])
+            }
             _self.processing = false
           }
         })
         .catch((error) => {
-          _self.error = error
+          _self.error = [error]
           _self.processing = false
         })
     }

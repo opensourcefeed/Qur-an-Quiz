@@ -8,24 +8,25 @@
     <div class="content" v-if="loaded">
       <table>
         <thead>
-          <td>Rank</td><td>Name</td><td>Best Score</td>
+          <td>Rank</td><td>Name</td><td>Level</td><td>Best Score</td>
         </thead>
         <tbody>
           <tr v-bind:key="index" v-for="(record, index) in records">
-            <td>{{index + 1}}</td>
+            <td>{{record.rank}}</td>
             <td>{{record.name}}</td>
-            <td>{{record.highest_score}}</td>
+            <td>{{record.level}}
+            <td>{{record.score}}</td>
           </tr>
         </tbody>
       </table>
     </div>
     <Spinner v-else />
-    <div class="card" v-if="myRecord">
+    <div class="card" v-if="myRecord && myRecord.score">
       <div class="name">{{myRecord.name}}</div>
       <table class="info">
         <tr>
-          <td>Rank: {{myRecord.rank}}</td>
-          <td>Best Score: {{myRecord.highest_score}}</td>
+          <td>Level: {{myRecord.level.seq}}</td>
+          <td>Best Score: {{myRecord.score}}</td>
         </tr>
       </table>
     </div>
@@ -52,7 +53,7 @@ export default {
   methods: {
     fetchRecords: function () {
       let _self = this
-      fetch(`${Constants.REMOTE}scoreboard`, {mode: 'cors'})
+      fetch(`${Constants.REMOTE}score/`)
         .then(response => response.json())
         .then(data => {
           _self.records = data
@@ -65,7 +66,7 @@ export default {
     fetchMyRecord: function () {
       let _self = this
       if (this.id) {
-        fetch(`${Constants.REMOTE}user/${this.id}`, {mode: 'cors'})
+        fetch(`${Constants.REMOTE}score/${this.id}`)
           .then(response => response.json())
           .then(function (data) {
             _self.myRecord = data

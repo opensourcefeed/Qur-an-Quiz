@@ -5,7 +5,9 @@
    <img id="title-logo" src="../../static/images/logo.jpg"/>
    <h1>Login</h1>
    <form autocomplete="off">
-    <div class="error" v-if="error">{{error}}</div>
+    <ul class="error" v-if="error.length">
+      <li v-for="(item, index) in error" :key="index">{{item}}</li>
+    </ul>
     <div>
       <label class="label-email">
         <input type="text" v-model="loginVo.userId" placeholder="Email or Phone" tabindex="1" required />
@@ -43,7 +45,7 @@ export default {
         userId: '',
         password: ''
       },
-      error: '',
+      error: [],
       processing: true
     }
   },
@@ -54,28 +56,27 @@ export default {
     login: function () {
       let _self = this
       this.processing = true
-      fetch(`${Constants.REMOTE}login`, {
+      this.error = []
+      fetch(`${Constants.REMOTE}user/login/`, {
         body: JSON.stringify(this.loginVo),
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        },
-        mode: 'cors'
+          'Content-Type': 'application/json'
+        }
       })
-        .then(response => response.json())
-        .then(function (data) {
+        .then(async function (response) {
+          let data = await response.json()
           console.log(data)
-          if (data.status === 'success') {
-            CommonUtils.setUser(data.user)
+          if (response.status === 200) {
+            CommonUtils.setUser(data)
             _self.$router.push({name: 'Menu'})
           } else {
-            _self.error = data.reason
+            _self.error.push('Invalid Email/Phone or Password')
             _self.processing = false
           }
         })
         .catch((error) => {
-          _self.error = error
+          _self.error.push(error)
           _self.processing = false
         })
     }

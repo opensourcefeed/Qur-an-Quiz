@@ -13,15 +13,15 @@ import Utils from './mixins/CommonUtils'
 import Constants from './constants/Constants'
 import Updater from './components/Updater'
 
-window.log = ''
-if (!console._log_old) {
-  console._log_old = console.log
-  console.log = function (msg) {
-    console._log_old(msg)
-    window.log += Date() + ' ' + msg + '<br>'
-  }
-  console.error = console.log
-}
+// window.log = ''
+// if (!console._log_old) {
+//   console._log_old = console.log
+//   console.log = function (msg) {
+//     console._log_old(msg)
+//     window.log += Date() + ' ' + msg + '<br>'
+//   }
+//   console.error = console.log
+// }
 
 export default {
   name: 'App',
@@ -231,5 +231,8 @@ input {
   padding: 1rem;
   color: white;
   border: 1px solid black;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+  text-transform: capitalize;
 }
 </style>

@@ -12,9 +12,9 @@
         <p class="timer">Remaining time {{remainingTime}}</p>
       </div>
       <p class="question">{{question.question}}</p>
-      <div class="option btn" :class="{correct: selectedAnswer === option && option == question.answer, incorrect: selectedAnswer === option && option !== question.answer}" @click="markAnswer(option)" v-bind:key="index" v-for="(option, index) of question.options">{{option}}</div>
+      <div class="option btn" :class="{correct: selectedAnswer === option.option && option.is_correct, incorrect: selectedAnswer === option.option && !option.is_correct}" @click="markAnswer(option)" v-bind:key="index" v-for="(option, index) of question.options">{{option.option}}</div>
       <div v-if="selected">
-        <router-link class="option btn" v-if="questionNum < questions.length" :to="{name: 'Question', params: {category: topicId, number: Number(questionNum) + 1}}">
+        <router-link class="option btn" v-if="questionNum < questions.length" :to="{name: 'Question', params: {category: categoryId, level: levelId, number: Number(questionNum) + 1}}">
           CONTINUE
         </router-link>
         <router-link class="option btn" v-else :to="{name: 'Result'}">
@@ -71,8 +71,8 @@ export default {
       console.log(this.selected)
       if (this.selected) return
       this.selected = true
-      this.selectedAnswer = answer
-      if (answer === this.question.answer) {
+      this.selectedAnswer = answer.option
+      if (answer.is_correct) {
         this.$store.state.data.score += 1
       }
       console.log('score ' + this.$store.state.data.score)
@@ -91,29 +91,36 @@ export default {
     },
     loadData: function () {
       let _self = this
-      axios.get(`${Constants.REMOTE_DATA}${this.topicId}.json`)
+      axios.get(`${Constants.REMOTE}question/level/${this.levelId}/category/${this.categoryId}/`)
         .then((data) => {
           data = data.data
           console.log(data)
           _self.$store.commit('setData', data)
-          let questions = CommonUtils.shuffle(data.questions)
+          let questions = CommonUtils.shuffle(data)
+          console.log('questions', questions)
           for (let question of questions) {
             question.options = CommonUtils.shuffle(question.options)
           }
           let questionCount = questions.length > Constants.QUESTION_COUNT ? Constants.QUESTION_COUNT : questions.length
           data.questions = questions.splice(0, questionCount)
           data.score = 0
+          data.level = _self.levelId
+          data.category = _self.categoryId
           _self.loaded = true
           _self.updateTimer()
         })
         .catch(function (e) {
+          console.log(e)
           _self.error = true
         })
     }
   },
   computed: {
-    topicId () {
-      return this.$route.params.topic
+    categoryId () {
+      return this.$route.params.category
+    },
+    levelId () {
+      return this.$route.params.level
     },
     topic () {
       return this.$store.state.data.title ? this.$store.state.data.title : ''

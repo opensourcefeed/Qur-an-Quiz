@@ -23,6 +23,7 @@ router.register(r'user', views.UserViewSet)
 router.register(r'question', views.QuestionViewSet)
 router.register(r'category', views.CategoryViewSet)
 router.register(r'level', views.LevelViewSet)
+router.register(r'score', views.ScoreViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),

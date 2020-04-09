@@ -7,7 +7,7 @@
       <img id="title-logo" src="../../static/images/logo.jpg"/>
       <div class="group">
         <div class="item">
-          <router-link :to="{name: 'Category'}">
+          <router-link :to="{name: 'Level'}">
             <img src="../../assets/meta/quiz.svg"><br/>
             Film Quiz
           </router-link>

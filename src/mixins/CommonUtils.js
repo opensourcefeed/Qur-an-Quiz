@@ -14,6 +14,7 @@ export default {
     return '_' + Math.random().toString(36).substr(2, 9)
   },
   setUser (user) {
+    console.log('Setting user ', user)
     window.localStorage.setItem(`${Constants.APP_STORAGE_KEY}-user`, JSON.stringify(user))
   },
   getUser () {

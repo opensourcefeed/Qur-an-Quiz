@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Menu from '@/components/Menu'
 import Category from '@/components/Category'
+import Level from '@/components/Level'
 import Question from '@/components/Question'
 import Result from '@/components/Result'
 import Page from '@/components/Page'
@@ -35,12 +36,17 @@ export default new Router({
       component: Register
     },
     {
-      path: '/quiz/category',
+      path: '/quiz',
+      name: 'Level',
+      component: Level
+    },
+    {
+      path: '/quiz/level/:level',
       name: 'Category',
       component: Category
     },
     {
-      path: '/quiz/question/:topic/:number?',
+      path: '/quiz/level/:level/category/:category/question/:number?',
       name: 'Question',
       component: Question
     },

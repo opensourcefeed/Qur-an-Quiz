@@ -10,21 +10,27 @@ class User(models.Model):
     password = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return '{}'.format(self.email)
+
 class Level(models.Model):
     name = models.CharField(max_length=255)
+    enabled = models.BooleanField(default=False)
+    seq = models.IntegerField(default=0)
 
     def __str__(self):
-        return '{}'.format(self.name)
+        return '{} - {}'.format(self.name, self.enabled)
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
+    enabled = models.BooleanField(default=False)
 
     def __str__(self):
-        return '{}'.format(self.name)
+        return '{} - {}'.format(self.name, self.enabled)
 
 class Question(models.Model):
     level = models.ForeignKey(Level, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='questions')
     question = models.TextField()
 
     def __str__(self):
@@ -43,11 +49,13 @@ class Score(models.Model):
     level = models.ForeignKey(Level, on_delete=models.CASCADE)
     category = models.ForeignKey(
          Category, 
-         on_delete=models.CASCADE,
-         related_name="scores"
+         on_delete=models.CASCADE
     )
     score = models.IntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return '{} {} {} {}'.format(self.user.name, self.level.name, self.category.name, self.score)
 
 class Attempt(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

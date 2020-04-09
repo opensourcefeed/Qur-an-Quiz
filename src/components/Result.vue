@@ -50,22 +50,23 @@ export default {
     saveScore () {
       let data = {}
       let _self = this
-      data.highest_score = this.score ? this.score : 0
+      data.score = this.score ? this.score : 0
+      data.user_id = this.id
+      data.level_id = this.levelId
+      data.category_id = this.categoryId
       if (this.id) {
         data.id = this.id
       }
-      fetch(`${Constants.REMOTE}score/update`, {
+      fetch(`${Constants.REMOTE}score/`, {
         body: JSON.stringify(data),
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        },
-        mode: 'cors'
+          'Content-Type': 'application/json'
+        }
       })
         .then(response => response.json())
         .then(function (data) {
-          CommonUtils.setUser(data)
+          CommonUtils.setUser(data.user)
           /* global admob */
           /* eslint no-undef: ["error", { "typeof": true }] */
           if (window.admob && CommonUtils.canShowAd()) {
@@ -85,6 +86,12 @@ export default {
   computed: {
     score: function () {
       return this.$store.state.data.score ? this.$store.state.data.score : ''
+    },
+    levelId: function () {
+      return this.$store.state.data.level ? this.$store.state.data.level : ''
+    },
+    categoryId: function () {
+      return this.$store.state.data.category ? this.$store.state.data.category : ''
     },
     questionCount: function () {
       return this.$store.state.data.questions ? this.$store.state.data.questions.length : ''

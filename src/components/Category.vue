@@ -6,8 +6,8 @@
       </h2>
     </div>
     <div v-if="topics.length" class="categories">
-      <router-link v-bind:key="index" class="btn" v-for="(topic, index) in topics" :to="{name: 'Question', params: {topic: topic.id}}">
-        {{topic.title}}
+      <router-link v-bind:key="index" class="btn" v-for="(topic, index) in topics" :to="{name: 'Question', params: {level: levelId, category: topic.id}}">
+        {{topic.name}}
       </router-link>
     </div>
     <div class="loading" v-else-if="error">
@@ -35,7 +35,7 @@ export default {
   },
   mounted: function () {
     let _self = this
-    fetch(`${Constants.REMOTE_DATA}topics.json`)
+    fetch(`${Constants.REMOTE}level/${this.levelId}/categories`)
       .then(response => {
         if (response.ok) {
           return response.json()
@@ -43,13 +43,21 @@ export default {
           throw new Error('Something went wrong')
         }
       })
-      .then((data) => {
-        _self.topics = data
+      .then(async (data) => {
+        console.log('success')
+        _self.topics = await data
+        console.log(_self.topics)
       })
       .catch(error => {
+        console.log('error')
         window.alert(error)
         _self.error = true
       })
+  },
+  computed: {
+    levelId: function () {
+      return this.$route.params.level
+    }
   }
 }
 </script>
