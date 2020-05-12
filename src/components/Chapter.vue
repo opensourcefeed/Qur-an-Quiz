@@ -2,12 +2,12 @@
   <div>
     <div class="nav">
       <h2>
-        <router-link id="back" :to="{name: 'Menu'}"><img class="icon" src="../../assets/meta/back.svg"></router-link>Quiz Category
+        <router-link id="back" :to="{name: 'Menu'}"><img class="icon" src="../../assets/meta/back.svg"></router-link>Chapters
       </h2>
     </div>
     <div v-if="topics.length" class="categories">
-      <router-link v-bind:key="index" class="btn" v-for="(topic, index) in topics" :to="{name: 'Question', params: {level: levelId, category: topic.id}}">
-        {{topic.name}}
+      <router-link v-bind:key="index" class="btn" v-for="(topic, index) in topics" :to="{name: 'Question', params: {chapter: topic.id}}">
+        {{topic.title}}
       </router-link>
     </div>
     <div class="loading" v-else-if="error">
@@ -35,7 +35,7 @@ export default {
   },
   mounted: function () {
     let _self = this
-    fetch(`${Constants.REMOTE}level/${this.levelId}/categories`)
+    fetch(`${Constants.REMOTE}chapters.json`)
       .then(response => {
         if (response.ok) {
           return response.json()
@@ -53,11 +53,6 @@ export default {
         window.alert(error)
         _self.error = true
       })
-  },
-  computed: {
-    levelId: function () {
-      return this.$route.params.level
-    }
   }
 }
 </script>

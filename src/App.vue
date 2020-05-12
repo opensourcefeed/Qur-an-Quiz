@@ -6,28 +6,10 @@
 </template>
 
 <script>
-// import axios from 'axios'
-// import json from './assets/data/data.json'
-import {initializeRating} from './mixins/rating.js'
-import Utils from './mixins/CommonUtils'
 import Constants from './constants/Constants'
-import Updater from './components/Updater'
-
-// window.log = ''
-// if (!console._log_old) {
-//   console._log_old = console.log
-//   console.log = function (msg) {
-//     console._log_old(msg)
-//     window.log += Date() + ' ' + msg + '<br>'
-//   }
-//   console.error = console.log
-// }
 
 export default {
   name: 'App',
-  components: {
-    Updater
-  },
   data: function () {
     return {
       updateAvailable: false,
@@ -42,42 +24,6 @@ export default {
 
       // define backbutton functionality
       document.addEventListener('backbutton', this.onBackKeyDown, false)
-
-      // Integrate AdMobAds
-      /* global admob */
-      /* eslint no-undef: ["error", { "typeof": true }] */
-      if (typeof admob !== 'undefined') {
-        setTimeout(function () {
-          console.log('initializing ad mob')
-          admob.banner.config({
-            id: 'ca-app-pub-7405511998154146/1589745583',
-            isTesting: false
-          })
-          admob.banner.prepare()
-
-          admob.interstitial.config({
-            id: 'ca-app-pub-7405511998154146/6431069769',
-            autoShow: false
-          })
-          admob.interstitial.prepare()
-          console.log('initialized admob')
-
-          document.addEventListener('admob.interstitial.events.CLOSE', function (event) {
-            admob.interstitial.prepare()
-            Utils.setAdShown()
-          })
-        }, 500)
-      } else {
-        console.log('admob is undefined')
-      }
-
-      initializeRating()
-
-      console.log('plugins loaded')
-
-      console.log(JSON.stringify(window.plugins))
-
-      console.log(JSON.stringify(window.cordova.plugins))
     },
     onBackKeyDown: function (e) {
       e.preventDefault()
@@ -144,7 +90,7 @@ export default {
 
 <style>
 :root {
-  --primary-color: #e3be92;
+  --primary-color: #00407f;
 }
 #app {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -163,7 +109,7 @@ h2 {
   text-transform: uppercase;
 }
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 body {
@@ -208,31 +154,15 @@ body {
 .btn {
   display: block;
   cursor: pointer;
-  background: #e3be92;
-  color: black;
+  background: var(--primary-color);
+  color: white;
   padding: 20px 10px;
   border-radius: 10px;
   margin: auto;
   margin: 10px;
 }
-form a {
-  color: var(--primary-color);
-  font-weight: bold;
-  text-decoration: underline
-}
-input {
-  height: 2rem;
-  padding: .1rem;
-  font-size: 1.2rem;
-  border: 1px solid #e3be92
-}
 .error {
-  background: #bb0000;
-  padding: 1rem;
-  color: white;
-  border: 1px solid black;
-  padding-left: 2rem;
-  line-height: 1.5rem;
-  text-transform: capitalize;
+  margin-top: 50vh;
+  color: black;
 }
 </style>
