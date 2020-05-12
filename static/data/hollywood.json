@@ -1,0 +1,105 @@
+{
+  "questions": [
+    {
+      "answer": "Dr. No",
+      "question": "Which among the following is the first James Bond movie?",
+      "options": [
+        "Dr. No",
+        "Thunderball",
+        "The spy who loved me",
+        "Die another day"
+      ]
+    },
+    {
+      "answer": "Leaving Las Vegas",
+      "question": "Nicolas Cage got his first Oscar award for which movie ?",
+      "options": [
+        "National Treasure",
+        "Ghost Rider",
+        "Arsenal",
+        "Leaving Las Vegas"
+      ]
+    },
+    {
+      "answer": "Alan Turing",
+      "question": "Benedict Cumberbatch played the role of which famous mathematician in the movie 'The Imitation Game' ?",
+      "options": [
+        "Paul Erdős",
+        "Stephen Hawking",
+        "Alan Turing",
+        "Srinivasa Ramanujan"
+      ]
+    },
+    {
+      "answer": "Apollo 13",
+      "question": "Which of the following space movies had the tagline 'Failure is not an option' ?",
+      "options": [
+        "The Martian",
+        "Armageddon",
+        "Apollo 13",
+        "Mission to Mars"
+      ]
+    },
+    {
+      "answer": "Lucasfilm",
+      "question": "The Motorola Droid smartphone licensed the branding 'Droid' from which film company ?",
+      "options": [
+        "Universal Pictures",
+        "Lucasfilm",
+        "Warner Bros",
+        "Paramount Pictures"
+      ]
+    },
+    {
+      "answer": "Legends of the Fall",
+      "question": "Which among the following movies is not related to World War 2 ?",
+      "options": [
+        "Saving Private Ryan",
+        "The Great Escape",
+        "Dunkirk",
+        "Legends of the Fall"
+      ]
+    },
+    {
+      "answer": "Madeleine Stowe",
+      "question": "Who played the character of the Cora Munro in the film 'The Last of the Mohicans' ?",
+      "options": [
+        "Madeleine Stowe",
+        "Jodhi May",
+        "Brooke Shields",
+        "Mary Stuart Masterson"
+      ]
+    },
+    {
+      "answer": "Green Book",
+      "question": "Which movie won the Academy Award for Best Picture in 2018 ?",
+      "options": [
+        "Bohemian Rhapsody",
+        "Black Panther",
+        "Green Book",
+        "The Shape of Water"
+      ]
+    },
+    {
+      "answer": "Chamber of Secrets",
+      "question": "Tom Marvolo Riddle's diary was destroyed in which Harry Potter movie ?",
+      "options": [
+        "Goblet of Fire",
+        "Chamber of Secrets",
+        "Half-Blood Prince",
+        "Prisoner of Azkaban"
+      ]
+    },
+    {
+      "answer": "Natasha Romanoff",
+      "question": "Which of the following characters survived Thanos' snap in Avengers: Infinity War movie ?",
+      "options": [
+        "Peter Quill",
+        "T'Challa",
+        "Stephen Strange",
+        "Natasha Romanoff"
+      ]
+    }
+  ],
+  "title": "Hollywood"
+}
