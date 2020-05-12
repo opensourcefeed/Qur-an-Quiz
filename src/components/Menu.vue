@@ -26,7 +26,10 @@
         </div> -->
       </div>
     </div>
-<!--       <hr> -->
+    <hr>
+    <div class="link">
+      For feedback & corrections, whatsapp +91-8547645516
+    </div>
 <!--       <div class="category">
         <a @click="openRateDialog"><img class="icon" src="../../assets/meta/star.svg">Rate Us</a>
       </div>

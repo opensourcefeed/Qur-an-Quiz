@@ -48,12 +48,12 @@
 import axios from 'axios'
 import CommonUtils from '../mixins/CommonUtils.js'
 import Constants from '../constants/Constants.js'
-import Spinner from './Spinner'
+import Loader from './Loader'
 
 export default {
   name: 'question',
   components: {
-    Spinner
+    Loader
   },
   data: function () {
     return {

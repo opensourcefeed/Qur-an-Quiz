@@ -13,19 +13,19 @@
     <div class="loading" v-else-if="error">
       <p>Could not load questions, please check your network.</p>
     </div>
-    <Spinner v-else />
+    <Loader v-else />
   </div>
 </template>
 
 <script>
 
 import Constants from '../constants/Constants.js'
-import Spinner from './Spinner'
+import Loader from './Loader'
 
 export default {
   name: 'Category',
   components: {
-    Spinner
+    Loader
   },
   data: function () {
     return {
