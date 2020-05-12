@@ -4,15 +4,15 @@
       <h2><a><img class="icon" src="../../assets/meta/back-disabled.svg"></a>Menu</h2>
     </div>
     <div class="categories">
-      <img id="title-logo" src="../../static/images/logo.jpg"/>
+      <img id="title-logo" src="../../static/images/logo.png"/>
       <div class="group">
         <div class="item">
-          <router-link :to="{name: 'Level'}">
+          <router-link :to="{name: 'Chapter'}">
             <img src="../../assets/meta/quiz.svg"><br/>
-            Film Quiz
+            Qur'an Quiz
           </router-link>
         </div>
-        <div class="item">
+       <!--  <div class="item">
           <router-link :to="{name: 'ScoreBoard'}">
             <img src="../../assets/meta/scoreboard.svg"><br/>
             ScoreBoard
@@ -23,10 +23,11 @@
             <img src="../../assets/meta/news.svg"><br/>
             Film News
           </a>
-        </div>
+        </div> -->
       </div>
-      <hr>
-      <div class="category">
+    </div>
+<!--       <hr> -->
+<!--       <div class="category">
         <a @click="openRateDialog"><img class="icon" src="../../assets/meta/star.svg">Rate Us</a>
       </div>
       <div class="category">
@@ -36,7 +37,7 @@
     <hr>
     <router-link class="link" :to="{name: 'Page', params: {key: 'beta'}}">
       BETA RELEASE NOTES
-    </router-link>
+    </router-link> -->
   </div>
 </template>
 
@@ -96,7 +97,7 @@ hr {
 }
 .group {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: .2em;
   margin-top: 2vh;
   margin: 16px;
@@ -108,6 +109,8 @@ hr {
     position: relative;
     height: 80px;
     word-break: break-all;
+    width: 30%;
+    margin: auto;
 }
 .item a {
   position: absolute;

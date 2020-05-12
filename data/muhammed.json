@@ -1,285 +1,205 @@
 {
+  "title": "48. മൂഹമ്മദ്",
   "questions": [
     {
-      "answer": "Dr. No",
-      "question": "Which among the following is the first James Bond movie?",
+      "question": "സൂറ: മുഹമ്മദിന്റെ മറ്റൊരു പേരെന്ത്?",
       "options": [
-        "Dr. No",
-        "Thunderball",
-        "The spy who loved me",
-        "Die another day"
-      ]
-    },
-    {
-      "answer": "Leaving Las Vegas",
-      "question": "Nicolas Cage got his first Oscar award for which movie ?",
-      "options": [
-        "National Treasure",
-        "Ghost Rider",
-        "Arsenal",
-        "Leaving Las Vegas"
-      ]
-    },
-    {
-      "answer": "Alan Turing",
-      "question": "Benedict Cumberbatch played the role of which famous mathematician in the movie 'The Imitation Game' ?",
-      "options": [
-        "Paul Erdős",
-        "Stephen Hawking",
-        "Alan Turing",
-        "Srinivasa Ramanujan"
-      ]
-    },
-    {
-      "answer": "Apollo 13",
-      "question": "Which of the following space movies had the tagline 'Failure is not an option' ?",
-      "options": [
-        "The Martian",
-        "Armageddon",
-        "Apollo 13",
-        "Mission to Mars"
-      ]
-    },
-    {
-      "answer": "Lucasfilm",
-      "question": "The Motorola Droid smartphone licensed the branding 'Droid' from which film company ?",
-      "options": [
-        "Universal Pictures",
-        "Lucasfilm",
-        "Warner Bros",
-        "Paramount Pictures"
-      ]
-    },
-    {
-      "answer": "Legends of the Fall",
-      "question": "Which among the following movies is not related to World War 2 ?",
-      "options": [
-        "Saving Private Ryan",
-        "The Great Escape",
-        "Dunkirk",
-        "Legends of the Fall"
-      ]
-    },
-    {
-      "answer": "Madeleine Stowe",
-      "question": "Who played the character of the Cora Munro in the film 'The Last of the Mohicans' ?",
-      "options": [
-        "Madeleine Stowe",
-        "Jodhi May",
-        "Brooke Shields",
-        "Mary Stuart Masterson"
-      ]
-    },
-    {
-      "answer": "Green Book",
-      "question": "Which movie won the Academy Award for Best Picture in 2019 ?",
-      "options": [
-        "Bohemian Rhapsody",
-        "Black Panther",
-        "Green Book",
-        "The Shape of Water"
-      ]
-    },
-    {
-      "answer": "Chamber of Secrets",
-      "question": "Tom Marvolo Riddle's diary was destroyed in which Harry Potter movie ?",
-      "options": [
-        "Goblet of Fire",
-        "Chamber of Secrets",
-        "Half-Blood Prince",
-        "Prisoner of Azkaban"
-      ]
-    },
-    {
-      "answer": "Natasha Romanoff",
-      "question": "Which of the following characters survived Thanos' snap in Avengers: Infinity War movie ?",
-      "options": [
-        "Peter Quill",
-        "T'Challa",
-        "Stephen Strange",
-        "Natasha Romanoff"
-      ]
-    },
-    {
-      "question": "Which among the 4 is the longest running movie franchise,as of now,according to the Guiness World records itself ?",
-      "options": [
-        "James Bond series",
-        "Marvel Franchise",
-        "Godzilla",
-        "Star wars series"
+        "റസൂല്‍",
+        "നുബുവ്വത്",
+        "നബിയ്യത്",
+        "അസ്വഫ്"
       ],
-      "answer": "Godzilla"
+      "answer": "അസ്വഫ്"
     },
     {
-      "question": "Which among these movies has spawned the most number of remakes?",
+      "question": "സൂറ: മുഹമ്മദിന്റെ മറ്റൊരു പേരെന്ത്?",
       "options": [
-        "King Kong",
-        "Seven Samurai",
-        "Inavsion Of The Body Snatchers",
-        "A Christmas Carol"
+        "റസൂല്‍",
+        "നുബുവ്വത്",
+        "നബിയ്യത്",
+        "ഖിതാല്‍"
       ],
-      "answer": "A Christmas Carol"
+      "answer": "ഖിതാല്‍"
     },
     {
-      "question": "Which of these  movies spawned a tv series as well?",
+      "question": "അല്ലാഹുവിന്റെ മാര്‍ഗത്തില്‍ സമര്‍പ്പിക്കാന്‍ തയ്യാറാകാത്തവര്‍ക്ക് സൂറ മുഹമ്മദ് നല്‍കുന്ന മുന്നറിയിപ്പെന്ത്?",
       "options": [
-        "Twin Peaks",
-        "Twilight Zone",
-        "Mask",
-        "Mission impossible"
+        "അല്ലാഹു അവര്‍ക്ക് രോഗങ്ങള്‍ നല്‍കും.",
+        "അവരെ നിന്ദ്യരാക്കും",
+        "അവരെ ഇഹത്തിലും പരത്തിലും അനുഗ്രഹിക്കും",
+        "ആ സമൂഹത്തെ തുടച്ച് നീക്കുകയും പുതിയ സമൂഹത്തെ കൊണ്ട് വരികയും ചെയ്യും"
       ],
-      "answer": "Mask"
+      "answer": "ആ സമൂഹത്തെ തുടച്ച് നീക്കുകയും പുതിയ സമൂഹത്തെ കൊണ്ട് വരികയും ചെയ്യും"
     },
     {
-      "question": "Which is the first popular movie to feature a surprise ending which overturns the entire film",
+      "question": "ഏത് നബിയുടെ ജീവ ചരിത്രത്തിലാണ് സയ്യാറത് എന്ന പദം ഉപയോഗിച്ചിട്ടുള്ളത്?",
       "options": [
-        "Citizen Kane",
-        "The Cabinet of Dr Caligari",
-        "Psycho",
-        "Planet of the apes"
+        "യൂസുഫ് നബി",
+        "യൂനുസ് നബി",
+        "മുഹമ്മദ് നബി",
+        "നൂഹ് നബി"
       ],
-      "answer": "The Cabinet of Dr Caligari"
+      "answer": "യൂസുഫ് നബി"
     },
     {
-      "question": "Which of these movies have a plot twist ?",
+      "question": "റൂഹ് പിടിക്കാന്‍ നിയോഗിക്കപ്പെട്ട മാലാഖയെ ഖുര്‍ആന്‍ വിശേഷിപ്പിക്കുന്ന പേരെന്ത്?",
       "options": [
-        "Charade(1964)",
-        "Sleuth",
-        "Sixth Sense",
-        "House of Games"
+        "മലക്കുല്‍ ഖത്ല്‍",
+        "മലക്കുല്‍ ഹയാത്ത്",
+        "മലക്കുല്‍ മൗത്ത്",
+        "മലക്കുല്‍ ഖിയാമത്"
       ],
-      "answer": "Sixth Sense"
+      "answer": "മലക്കുല്‍ മൗത്ത്"
     },
     {
-      "question": "Which among the following is not  remake of a Bollywood movie",
+      "question": "‫أضغان‬ എന്ന പദത്തിന്റെ അര്‍ഥമെന്ത്?",
       "options": [
-        "A Common Man (2013)",
-        "Sheep without a Shepherd (2020)",
-        "Delivery Man (2013)",
-        "Fear (1996)"
+        "വിശിഷ്ട ഗുണങ്ങള്‍",
+        "സ്വഭാവ ദൂഷ്യം",
+        "ഉല്‍കൃഷ്ഠ സ്വഭാവം",
+        "വഞ്ചനാത്മകത"
       ],
-      "answer": "Sheep without a Shepherd (2020)"
+      "answer": "സ്വഭാവ ദൂഷ്യം"
     },
     {
-      "question": "Who was the first actor to portray James Bond on screen?",
+      "question": "മുഹമ്മദ് ഖുര്‍ആനിലെ എത്രാമത്തെ അദ്ധ്യായമാണ്?",
       "options": [
-        "Barry Nelson",
-        "Sean Connery",
-        "Sir Roger Moore",
-        "George Lazenby"
+        "47",
+        "23",
+        "15",
+        "18"
       ],
-      "answer": "Barry Nelson"
+      "answer": "47"
     },
     {
-      "question": "Who among the following has played the most number of roles in a single movie?",
+      "question": "എത്ര സൂക്തങ്ങളാണ് സൂറ മുഹമ്മദില്‍ ഉള്ളത്?",
       "options": [
-        "Kamal Hassan-Dashavataram",
-        "James McAvoy-Split",
-        "Johnson George-Aaranu Njan",
-        "Eddie Murphy-The Nutty Professor"
+        "172",
+        "43",
+        "33",
+        "38"
       ],
-      "answer": "Johnson George-Aaranu Njan"
+      "answer": "38"
     },
     {
-      "question": "Which slasher series among these added a new angle to the genre  by introducing irony and making the movie meta(self –referential) , in the 1990s?",
+      "question": "മുഹമ്മദ് എന്ന പദം ഖുര്‍ആനില്‍ എത്ര തവണ ആവര്‍ത്തിച്ചിട്ടുണ്ട്?",
       "options": [
-        "Nightmare on Elm street",
-        "I know what you did last summer",
-        "Scream",
-        "Scary Movie"
+        "4",
+        "9",
+        "7",
+        "13"
       ],
-      "answer": "Nightmare on Elm street"
+      "answer": "4"
     },
     {
-      "question": "Who among the following is the first Indian actor to appear in  a Hollywood movie (significant role)?",
+      "question": "സൂറ മുഹമ്മദില്‍ 'മുഹമ്മദ്' എന്ന പദം എത്ര തവണയുണ്ട്?",
       "options": [
-        "Shashi Kapoor",
-        "Kabir Bedi",
-        "Persis Khambatt",
-        "Sabu Dastagir"
+        "2",
+        "3",
+        "1",
+        "4"
       ],
-      "answer": "Sabu Dastagir"
+      "answer": "1"
     },
     {
-      "answer": "The Manchurian Candidate",
-      "question": "In which movie you will see that uses the technique of psychological brainwashing of Cold War Russia and China?",
+      "question": "സൂറ മുഹമ്മദിനു മുമ്പുള്ള സൂറത്ത് ഏത്?",
       "options": [
-        "The Manchurian Candidate",
-        "The First Blood",
-        "Casualties of War",
-        "The Platoon"
-      ]
+        "അഹ്ഖാഫ്",
+        "ഫതഹ്",
+        "ജാഥിയ്യ",
+        "ഹുജുറാത്"
+      ],
+      "answer": "അഹ്ഖാഫ്"
     },
     {
-      "answer": "Midnight in Paris, Woody Allen",
-      "question": "Owen Wilson plays the character Gil in the movie based out in Paris, in which he longs to go to the golden age of Paris back in the past which brings him new experiences. Name the movie and it’s director?",
+      "question": "സൂറ മുഹമ്മദിനു ശേഷമുള്ള സൂറത്ത് ഏത്?",
       "options": [
-        "Marley and Me, David Frankel",
-        "Amelie, Jean-Pierre Jeunet",
-        "Midnight in Paris, Woody Allen",
-        "Paris I love you, Several directors"
-      ]
+        "അഹ്ഖാഫ്",
+        "ഫതഹ്",
+        "ജാഥിയ്യ",
+        "ഹുജുറാത്"
+      ],
+      "answer": "ഫതഹ്"
     },
     {
-      "answer": "American Psycho",
-      "question": "Which of the following movies is not directed by Coen brothers?",
+      "question": "ബുആഥ് യുദ്ധം നടന്നത് എപ്പോഴാണ്?",
       "options": [
-        "Miller’s Crossing",
-        "American Psycho",
-        "Fargo",
-        "No Country for Old Men"
-      ]
+        "ജാഹിലിയ്യ കാലഘട്ടത്തില്‍ മദീനയില്‍ വെച്ച്.",
+        "ഹിജ്റക്ക് ശേഷം ജൂത ഗോത്രവുമായിട്ട്",
+        "ഹിജ്റക്ക് മുമ്പ് റോമുമായിട്ട്",
+        "ഉമര്‍ (റ) ന്റെ കാലഘട്ടത്തില്‍"
+      ],
+      "answer": "ജാഹിലിയ്യ കാലഘട്ടത്തില്‍ മദീനയില്‍ വെച്ച്."
     },
     {
-      "answer": "Steven Spielberg",
-      "question": "Which director directed the first four Indiana Jones movies?",
+      "question": "നബി(സ)യോട് കരാര്‍ ലംഘിച്ച മദീനയിലെ ജുത ഗോത്രം",
       "options": [
-        "James Mangold",
-        "Michael Mann",
-        "Steven Spielberg",
-        "George Lucas"
-      ]
+        "ബനൂഖുറൈള",
+        "ബനൂ കിനാന",
+        "ബനൂ അല്‍ഖദ്രി",
+        "ബനൂ ഹൊഥൈല്‍"
+      ],
+      "answer": "ബനൂഖുറൈള"
     },
     {
-      "answer": "Quentin Tarantino",
-      "question": "Who played the role of Mr Orange in the movie Reservoir Dogs?",
+      "question": "ബനൂഖുറൈള യുദ്ധം നടന്ന വര്‍ഷം",
       "options": [
-        "Harvey Kietal",
-        "Woody Harlensen",
-        "Quentin Tarantino",
-        "Michael Madsen"
-      ]
+        "ഹിജ്റ 5",
+        "ഹിജ്റ 7",
+        "ഹിജ്റ 3",
+        "ഹിജ്റ 2"
+      ],
+      "answer": "ഹിജ്റ 5"
     },
     {
-      "answer": "Daniel Day Lewis",
-      "question": "Who played the role of The Butcher in the movie The Gangs of New York?",
+      "question": "ഖുര്‍ആന്‍ എഴുത്തുകാരനായിരുന്ന ഥാബിതുബ്നു ഹൈഥിന്റെ ജന്മ സ്ഥലം",
       "options": [
-        "Leonardo DiCaprio",
-        "Robert Di Niro",
-        "Daniel Day Lewis",
-        "Liam Neeson"
-      ]
+        "എത്യോപ്യ",
+        "മക്ക",
+        "മദീന",
+        "ത്വാഇഫ്"
+      ],
+      "answer": "മദീന"
     },
     {
-      "answer": "Life Lessons",
-      "question": "In the movie New York Stories which consists of three parts directed by different directors. Name the part directed by Martin Scorsese?",
+      "question": "പ്രവാചക പത്നിയായ ജുവൈരിയ(റ) ഏത് യുദ്ധത്തിലെ തടവുകാരി ആയിരുന്നു?",
       "options": [
-        "Life with Zoe",
-        "Oedipus Wreaks",
-        "Life Lessons",
-        "After Hours"
-      ]
+        "ബനൂ മുസ്ഥലിഖ്",
+        "തബൂക്ക്",
+        "അഹ്സാബ്",
+        "യമാമ"
+      ],
+      "answer": "ബനൂ മുസ്ഥലിഖ്"
     },
     {
-      "answer": "Robert Duvall",
-      "question": "Who played the role of The Consigliere in The Godfather 1?",
+      "question": "മക്കാ വിജയം നടന്ന വര്‍ഷം?",
       "options": [
-        "Robert Duvall",
-        "Brian De Palma",
-        "Oliver Stone",
-        "Robert Di Niro"
-      ]
+        "ഹിജ്റ 9",
+        "ഹിജ്റ 7",
+        "ഹിജ്റ 6",
+        "ഹിജ്റ 8"
+      ],
+      "answer": "ഹിജ്റ 8"
+    },
+    {
+      "question": "ഹുദൈബിയ സന്ധിയുടെ വേളയില്‍ മുസ്ലിംങ്ങളെ അക്രമിക്കാന്‍ ഖുറൈശികള്‍ ഒരുമിച്ച് കൂടിയ സ്ഥലം",
+      "options": [
+        "തന്‍ഈം",
+        "ജബലു നൂര്‍",
+        "ബദ്ര്‍",
+        "ഹാഷിം താഴ്വാര"
+      ],
+      "answer": "തന്‍ഈം"
+    },
+    {
+      "question": "ഹുനൈന്‍ യുദ്ധം നടന്ന വര്‍ഷം?",
+      "options": [
+        "ഹിജ്റ 9",
+        "ഹിജ്റ 7",
+        "ഹിജ്റ 6",
+        "ഹിജ്റ 8"
+      ],
+      "answer": "ഹിജ്റ 8"
     }
-  ],
-  "title": "Hollywood"
+  ]
 }

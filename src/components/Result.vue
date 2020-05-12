@@ -8,18 +8,15 @@
     <h3>Result</h3>
     You scored {{score * 100 / questionCount}}% by correctly answering {{score}} of total {{questionCount}} questions
     <hr>
-    <form>
-      <p>We store your score & name to populate scoreboard</p>
-      <label>Name:</label>
-      <input type="text" id="name" v-model="name">
-      <div class="btn" @click="saveScore">Submit</div>
-    </form>
+      <router-link class="btn" :to="{name: 'Chapter'}">
+        <img src="../../assets/meta/quiz.svg"><br/>
+        Try Again
+      </router-link>
   </div>
 </template>
 
 <script>
 import CommonUtils from '../mixins/CommonUtils.js'
-import Constants from '../constants/Constants.js'
 
 export default {
   name: 'Result',
@@ -28,60 +25,8 @@ export default {
       name: ''
     }
   },
-  methods: {
-    populateName: function () {
-      console.log('inside get name')
-      let _self = this
-      if (this.id) {
-        console.log('inside if')
-        fetch(`${Constants.REMOTE}user/${this.id}`, {mode: 'cors'})
-          .then(response => response.json())
-          .then(function (data) {
-            _self.name = data.name
-          })
-          .catch((error) => {
-            window.alert(error)
-          })
-      } else {
-        console.log('inside else')
-        _self.name = CommonUtils.userId()
-      }
-    },
-    saveScore () {
-      let data = {}
-      let _self = this
-      data.score = this.score ? this.score : 0
-      data.user_id = this.id
-      data.level_id = this.levelId
-      data.category_id = this.categoryId
-      if (this.id) {
-        data.id = this.id
-      }
-      fetch(`${Constants.REMOTE}score/`, {
-        body: JSON.stringify(data),
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-        .then(response => response.json())
-        .then(function (data) {
-          CommonUtils.setUser(data.user)
-          /* global admob */
-          /* eslint no-undef: ["error", { "typeof": true }] */
-          if (window.admob && CommonUtils.canShowAd()) {
-            admob.interstitial.show()
-          }
-          _self.$router.push('/')
-        })
-        .catch((error) => {
-          window.alert(error)
-          _self.$router.push('/')
-        })
-    }
-  },
+
   mounted: function () {
-    this.populateName()
   },
   computed: {
     score: function () {
@@ -98,11 +43,6 @@ export default {
     },
     id: function () {
       return CommonUtils.getUser().id
-    }
-  },
-  watch: {
-    'score': function () {
-      this.name = this.populateName()
     }
   }
 }

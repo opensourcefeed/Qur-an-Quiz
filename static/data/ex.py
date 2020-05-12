@@ -5,7 +5,7 @@ with open("meta.txt") as df:
 
 questions = []
 content = {}
-content["title"] = "Hollywood-2"
+content["title"] = "48. മൂഹമ്മദ്"
 
 lines = [line.strip() for line in lines]
 print(len(lines))

@@ -2,19 +2,18 @@
   <div>
     <div class="nav">
       <h2>
-        <router-link id="back" :to="{name: 'Category'}"><img class="icon" src="../../assets/meta/back.svg"></router-link>{{topic}}
+        <router-link id="back" :to="{name: 'Chapter'}"><img class="icon" src="../../assets/meta/back.svg"></router-link>{{chapter}}
       </h2>
     </div>
-
     <div v-if="question && loaded" id="quiz" >
       <div class="info">
         <p class="progress">Question {{questionNum}} of {{questions.length}}</p>
         <p class="timer">Remaining time {{remainingTime}}</p>
       </div>
       <p class="question">{{question.question}}</p>
-      <div class="option btn" :class="{correct: selectedAnswer === option.option && option.is_correct, incorrect: selectedAnswer === option.option && !option.is_correct}" @click="markAnswer(option)" v-bind:key="index" v-for="(option, index) of question.options">{{option.option}}</div>
+      <div class="option btn" :class="{correct: selectedAnswer === option && option === question.answer, incorrect: selectedAnswer === option && option != question.answer}" @click="markAnswer(option)" v-bind:key="index" v-for="(option, index) of question.options">{{option}}</div>
       <div v-if="selected">
-        <router-link class="option btn" v-if="questionNum < questions.length" :to="{name: 'Question', params: {category: categoryId, level: levelId, number: Number(questionNum) + 1}}">
+        <router-link class="option btn" v-if="questionNum < questions.length" :to="{name: 'Question', params: {chapter: chapterId, number: Number(questionNum) + 1}}">
           CONTINUE
         </router-link>
         <router-link class="option btn" v-else :to="{name: 'Result'}">
@@ -23,7 +22,7 @@
       </div>
 
     </div>
-    <div class="loading" v-else-if="error">
+    <div class="error" v-else-if="error">
       <p>Could not load questions, please check your network.</p>
     </div>
     <Spinner v-else />
@@ -66,13 +65,13 @@ export default {
     }
   },
   methods: {
-    markAnswer: function (answer) {
+    markAnswer: function (option) {
       console.log('asking to mark answer')
       console.log(this.selected)
       if (this.selected) return
       this.selected = true
-      this.selectedAnswer = answer.option
-      if (answer.is_correct) {
+      this.selectedAnswer = option
+      if (this.question.answer === this.selectedAnswer) {
         this.$store.state.data.score += 1
       }
       console.log('score ' + this.$store.state.data.score)
@@ -91,12 +90,13 @@ export default {
     },
     loadData: function () {
       let _self = this
-      axios.get(`${Constants.REMOTE}question/level/${this.levelId}/category/${this.categoryId}/`)
+      axios.get(`${Constants.REMOTE}${this.chapterId}.json`)
         .then((data) => {
           data = data.data
           console.log(data)
           _self.$store.commit('setData', data)
-          let questions = CommonUtils.shuffle(data)
+          data.questions = CommonUtils.shuffle(data.questions)
+          let questions = data.questions
           console.log('questions', questions)
           for (let question of questions) {
             question.options = CommonUtils.shuffle(question.options)
@@ -116,13 +116,10 @@ export default {
     }
   },
   computed: {
-    categoryId () {
-      return this.$route.params.category
+    chapterId () {
+      return this.$route.params.chapter
     },
-    levelId () {
-      return this.$route.params.level
-    },
-    topic () {
+    chapter () {
       return this.$store.state.data.title ? this.$store.state.data.title : ''
     },
     questionNum () {
@@ -202,7 +199,7 @@ h2 {
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.1rem;
-  color: black;
+  color: white;
   border: 3px solid var(--primary-color)
 }
 .correct {
