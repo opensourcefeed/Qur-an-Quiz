@@ -25,7 +25,7 @@
     <div class="error" v-else-if="error">
       <p>Could not load questions, please check your network.</p>
     </div>
-    <Spinner v-else />
+    <Loader v-else />
 
     <!-- <div class="video-responsive">
       <div v-if="error">
